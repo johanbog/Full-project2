@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{open-cv-template-matching}
+Template matching, November 2014.
+
+\bibitem{x-ray-booklet}
+E.~Gullikson~et.al. A.~Thompson, D.~Attwood.
+\newblock X-ray data booklet, 2001.
+
+\bibitem{cliff-lorimer}
+G.W.~Lorimer G.~Cliff.
+\newblock Quantitative analysis of thin foils using emma-4 - the ratio
+  technique.
+\newblock 1972.
+
+\bibitem{zeta-method}
+D.~B.~Williams M.~Watanabe.
+\newblock The quantitative analysis of thin specimens: a review of progress
+  from the cliff-lorimer to the new $\zeta$-factor methods.
+\newblock {\em Journal of Microscopy}, 221:89--109, 2 2006.
+
+\bibitem{open-cv-ECC}
+Satya Mallick.
+\newblock Image alignment (ecc) in opencv ( c++ / python ), July 2015.
+
+\bibitem{new-zeta-method}
+Christopher Su-Yan Own.
+\newblock {\em System Design and Verification of the Precession Electron
+  Diffraction Technique}.
+\newblock PhD thesis, 2005.
+
+\bibitem{williams-carter}
+David~B Williams and C.~Barry Carter.
+\newblock {\em Transmission Electron Microscopy Part 1: Basics}.
+\newblock Springer, New York, 2009.
+
+\end{thebibliography}
