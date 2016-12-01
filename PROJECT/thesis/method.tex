@@ -1,0 +1,39 @@
+% !TEX encoding = UTF-8 Unicode
+%!TEX root = thesis.tex
+% !TEX spellcheck = en-US
+%%=========================================
+\chapter{Experimental}
+
+\section{Material}
+
+\section{Equipment}
+
+\section{Dataset matching}
+\label{sec:method/dataset matching}
+
+Several methods were attempted in order to match the SPED and EDX datasets. The goal was that the matching would be performed automatically with no human input. For this to happen, the code would have to scale, rotate and translate one of the the datasets so that it fit the other. This requires several discernible features in both images. For this reason, the EDX dataset taken at the intersection of the nanowire and the other elements deposited on it, was chosen. The SPED dataset available at the start of the project was taken over a larger area than the EDX dataset. It was therefore decided to attempt to locate the position of the EDX dataset in the SPED dataset.
+
+The python library $\mathrm{imreg\_dft}$ \cite{imreg_dft} uses image registration to match two images. Several failed attempts were made using this technique. First, no processing was made to either dataset. The mean was taken in signal space in order to convert them into 2D images, and the intensities were scaled to the range $[0,255]$ so they would be uint8-images. The images were then input into the function, but the result did not come close. Several other attempts were done, following the same structure, except that the datasets were processed in different ways before being converted to 2D images:
+
+\begin{itemize}
+\item Principal component analysis (PCA) was performed on each dataset, and only the component most related to the GaAs nanowire was kept. The nanowire in each of the images now had a high intensity while all other areas were low in intensity.
+\item A similar result was obtained by inserting a virtual annulus in the SPED dataset, so that only a single diffraction spot corresponding to the nanowire was visible. In the EDX dataset, the EDX spectrum was cropped to only include the characteristic peaks corresponding to the nanowire.
+\item A virtual high-angle annular dark field aperture (virtual HAADF) was inserted in the SPED dataset, which was then compared to the DF image taken during the EDX session.
+\item .. background substraction? Thresholding
+\end{itemize}
+
+As none of these attempts gave any results, another and far more extensive python package, OpenCV \cite{open-cv}, was used instead.The ECC image alignment algorithm \cite{open-cv-ECC} can transform and fit an image using one of three different motions: Translation, euclidian or affine transformation. Here also, different preprocessing steps were taken to make the 2D images of the datasets more similar to each other. The affine transformation uses rotation, translation, scale and shear to fit the images. The euclidian transformation only rotates and translates, so one of the images was rotated before this algorithm was used. The rotation angle was estimated by measuring the angle between the same straight line (the intersection between the nanowire and the deposited elements) in both datasets, and the rotation was performed using the python library sci-kit image \cite{scikit-image}. Finally, the pure translation was attempted, and one of the images was rotated and scaled first. The scaling was performed by selecting the same two points in each datasets, and and using scikit-image to scale by the relative distance between them.
+
+Of these attempts, only the last attempt using the pure translation transformation gave results that were decent, but it was unstable and it was difficult to estimate the accuracy. It also required an unwanted amount of manual input from the user. It was then discovered that the metadata in HyperSpy contained accurate magnification numbers, so these were now used to scale the images relative to each other. It was then attempted to use another OpenCV algorithm, template matching \cite{open-cv-template-matching}, which was described in Section \ref{sec:++++++++}. This algorithm does not detect offset in rotation, so the SPED image was rotated using the manual technique described above.
+
+By inserting a virtual annulus in the SPED dataset so that only the nanowire lighted up, and selecting only the peaks corresponding to the nanowire in the EDX dataset, the two images were now scaled and rotated correctly, with the nanowire bright and other areas dark.
+%Further, a threshold was used in both images to make the areas not part of the nanowire have the same, low brightness. Lastly, the EDX image was cropped slightly to remove brighter areas that were not a part of the nanowire but that were too bright to be removed by the thresholding.
+The two images were now compared, and the relative position of the scaled EDX image was found in the rotated SPED image.
+
+The position of one of the EDX datasets was now found in the SPED dataset. This information was then used to find the positions of the remaining EDX datasets. This was done by finding the positions of the other EDX datasets relative to the dataset which was already matched  to the SPED dataset. To do this, OpenCV template matching was used to locate the positions of all the datasets in the HAADF overview image, which displays a large area of the sample. It was first attempted to use the EDX datasets, converted to images using the technique described earlier. This worked well for the datasets covering a relatively large region of the sample, but not for the smaller ones. Therefore, instead of the datasets, the survey images were used. These images are taken before the EDX recording, and shows a larger region of the sample at the same scale as the EDX dataset. After image matching was complete, the matched region was cropped to the actual area of the EDX dataset.The coordinates of the top left and bottom right corners of this area were found in the survey image's metadata in HyperSpy.
+
+++++++ Actually matching the two full datasets (including rotation of sped)
+
+\section{Quantitative analysis}
+
+The first step in the quantitative analysis was to determine the $\zeta$-factors of the elements in the sample. As this method had not yet been implemented into HyperSpy \cite{hyperspy}, the code was acquired from the Master's thesis of A. Garmannslund \cite{andreas}. The thickness of the material was estimated by using a thickness map (see Section ????). Background subtraction was performed by marking two windows at each side of the peaks, and the intensities of the lines were calculated with an integration window of 1.2 FWHM. The quantification was then performed using functions in HyperSpy. 
