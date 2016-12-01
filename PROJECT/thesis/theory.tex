@@ -105,16 +105,82 @@ When electron diffraction is performed in a TEM, a beam of electrons is transmit
 Electron diffraction in a STEM, or scanning electron diffraction (SED) works similarly to EDX in STEM: A parallel electron probe is scanned over the specimen in a raster pattern, and the resulting 2-dimensional diffraction pattern is recorded for each pixel. The result is a 4-dimensional dataset: Two axes in real space and two in reciprocal space.
 
 	\subsection{Diffraction theory}
-When discussing the diffraction of electrons, it is convenient to regard the electrons as waves. When a parallel electron wave with a wave vector $\vec{k}_i$ reaches the specimen, the electrons will scatter to different angles $\theta$. Assuming the scattering is purely elastic, i.e. the energy of the electrons is conserved, the wave vectors of the scattered electrons will be equal in magnitude to the wave vector of the incoming electrons, $\vert \vec{k}_s \vert = \vert \vec{k}_i \vert$. After being transmitted and scattered, the waves will interfere with each other. Due to the electrons being scattered to different angles, their path lengths will be different and thus they will be out of phase. Bragg's law introduces the Bragg angle $\theta_B$, which is the scattering angle at which there will be positive interference:
+When discussing the diffraction of electrons, it is convenient to regard the electrons as waves. When a parallel electron wave with a wave vector $\vec{k}_i$ reaches the specimen, the electrons will scatter to different angles $\theta$. Assuming the scattering is purely elastic, i.e. the energy of the electrons is conserved, the wave vectors of the scattered electrons will be equal in magnitude to the wave vector of the incoming electrons, $\vert \vec{k}_s \vert = \vert \vec{k}_i \vert = \nicefrac{2\pi}{\lambda}$.
+
++++ figure here
+
+\cref{} shows two electrons being scattered from atoms at two different atomic planes separated by a distance $d$. After being scattered, the distances the electrons have traveled differs by $2d \sin \theta$, where $\theta$ is the scattering angle. If this path difference is equal to an integer number of wavelengths, the electrons' phases will be equal. The angles $\theta$ where this occurs are called the Bragg angles, and this condition is called Bragg's law, given by
 
 \begin{equation}
 \label{braggs law}
-n\lambda = 2 d \sin \theta_B
+2 d \sin \theta_B = N\lambda,
 \end{equation}
 
-Here, $n$ is an integer, $\lambda$ is the wavelength of the electrons and and $d$ is the distance between the atoms in the lattice, as seen from the direction of the incoming electrons. At the angles $\theta_B$ that satisfy the above equation, a bright spot will be visible in the diffraction pattern.
+where $N$ is an integer.
 
-The equivalence of Bragg's law in reciprocal space is the Ewald sphere construction. +++++++++ Write about Ewald sphere
+The equivalence of Bragg's law in reciprocal space is the Laue condition. In order to discuss this, a few definitions must be made. First of all, the scattering vector $\vec{Q}=\vec{k}_s-\vec{k}_i$ describes the change in the wave vector due to diffraction. The resulting phase difference between the two scattered electrons can thus be written as $\Delta \phi = \vec{R} \cdot \vec{Q}$, where $\vec{R}$ gives the position of the second atom relative to the first. To generalize this, note that any three-dimensional lattice can be described by a set of vectors
+\begin{equation}
+\label{eq:real-lattice}
+\vec{R}_n=n_1 \vec{a}_1 + n_2 \vec{a}_2 + n_3 \vec{a}_3,
+\end{equation}
+where the vectors $\vec{a}_i$ are called the lattice vectors, and $n_i$ are integers. If the phase difference is to be equal to zero, so that Bragg's law (\cref{braggs law}) is fulfilled, we get the condition
+\begin{equation}
+\label{eq:laue-cond-1}
+\vec{R}_n \cdot \vec{Q} = 2 \pi N,
+\end{equation}
+
+where $N$ is an integer. To solve this equation, let us first define the reciprocal lattice. Similarly to the definition of the real-space lattice in \cref{eq:real-lattice}, the reciprocal lattice can be defined as
+\begin{equation}
+\vec{G} = h \vec{a*}_1 + k \vec{a*}_2 + l \vec{a*}_3,
+\end{equation}
+
+where $h$, $k$ and $l$ are integers, and the reciprocal lattice vectors $\vec{a*}_i$ satisfy the condition
+\begin{equation*}
+\vec{a*}_i \cdot \vec{a}_j} = \delta_{ij},
+\end{equation*}
+
+where $\delta$ is the Kronecker delta. It is now seen that the reciprocal lattice vectors $\vec{G}$ satisfy \cref{eq:laue-cond-1}, as the scalar product $\vec{G} \cdot \vec{R}_n$ is an integer. The Laue condition can now be written as
+\begin{equation}
+\vec{Q} = \vec{G}
+\end{equation}
+
+The Laue condition states that there will be constructive interference only when the scattering vector $\vec{Q}$ equals the reciprocal lattice vector $\vec{G}$. 
+
+% After being transmitted and scattered, the waves will interfere with each other. Due to the electrons being scattered to different angles, their path lengths will be different and they will have different phases. The scattering angles at which the electrons will be in phase is called the  Bragg's law introduces the Bragg angle $\theta_B$, which is the scattering angle at which there will be constructive interference:
+%
+%\begin{equation}
+%\label{braggs law}
+%n\lambda = 2 d \sin \theta_B
+%\end{equation}
+
+%Here, $n$ is an integer, $\lambda$ is the wavelength of the electrons and and $d$ is the distance between the atoms in the lattice, as seen from the direction of the incoming electrons. At the angles $\theta_B$ that satisfy the above equation, a bright spot will be visible in the diffraction pattern.
+%
+%The equivalence of Bragg's law in reciprocal space is the Laue condition. In order to discuss this, a few definitions must be made. First of all, the scattering vector $\vec{Q}=\vec{k}_s-\vec{k}_i$ describes the change in the wave vector due to diffraction.
+%
+%The phase 
+%
+%Using simple geometry, the amplitude of the scattering vector can be given as
+%\begin{equation}
+%\vert \vec{Q} \vert = \frac{2 \sin \theta}{\lambda}
+%\end{equation}
+%
+%At the Bragg angle $\theta = \theta_B$ with $n=1$, the scattering vector has an amplitude $\vert \vec{Q}_B \vert = \nicefrac{1}{d}$. 
+%
+% the phase of the scattered electron can be given as $\phi_i = \vec{k}_i \cdot \vec{r}$
+%
+%In order to discuss this, the reciprocal lattice must first be defined. +++++++++ Write about Ewald sphere
+%
+%A three-dimensional lattice can be described by a set of vectors
+%\begin{equation}
+%\vec{R}_n=n_1 \vec{a}_1 + n_2 \vec{a}_2 + n_3 \vec{a}_3,
+%\end{equation}
+%
+%where the vectors $\vec{a}_i$ are called the lattice vectors, and $n_i$ are integers. Bragg's law can now be restated as
+%\begin{equation}
+%\vec{Q} \cdot \vec{R}_n = 2 \pi m,
+%\end{equation}
+%
+%where $m$ is an integer. This equation states that only 
 
 +++++++ Mention kinematic and dynamical scattering
 

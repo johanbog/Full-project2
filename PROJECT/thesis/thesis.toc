@@ -19,20 +19,20 @@
 \contentsline {subsection}{\numberline {2.3.1}Diffraction theory}{9}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Electron diffraction in STEM}{10}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Scanning Precession Electron Diffraction (SPED)}{10}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Data analysis}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}(Introduction)}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}(?) Multivariate analysis}{11}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Template matching}{11}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Experimental}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Material}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Equipment}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Dataset matching}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Quantitative analysis}{14}{section.3.4}
-\contentsline {chapter}{\numberline {4}Results}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dataset matching}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}Quantification}{18}{section.4.3}
-\contentsline {chapter}{\numberline {A}Acronyms}{22}{appendix.A}
-\contentsline {chapter}{\numberline {B}Additional Information}{23}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{23}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{23}{subsection.B.1.1}
+\contentsline {section}{\numberline {2.4}Data analysis}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}(Introduction)}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Template matching}{12}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Rescaling and rotating multidimensional data}{12}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Experimental}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Material}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Equipment}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dataset matching}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Quantitative analysis}{16}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dataset matching}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Quantification}{20}{section.4.3}
+\contentsline {chapter}{\numberline {A}Acronyms}{24}{appendix.A}
+\contentsline {chapter}{\numberline {B}Additional Information}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{25}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{25}{subsection.B.1.1}
