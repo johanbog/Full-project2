@@ -1,21 +1,20 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: front.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: acknowledgment.aux
 A level-1 auxiliary file: summary.aux
-A level-1 auxiliary file: chapter00.aux
-A level-1 auxiliary file: chapter01.aux
-A level-1 auxiliary file: chapter02.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: theory.aux
+A level-1 auxiliary file: method.aux
+A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: appendix-b.aux
 The style file: plain.bst
 Database file #1: refs.bib
 Warning--entry type for "open-cv-ECC" isn't style-file defined
---line 51 of file refs.bib
+--line 52 of file refs.bib
 Warning--entry type for "open-cv-template-matching" isn't style-file defined
---line 66 of file refs.bib
+--line 67 of file refs.bib
 Warning--I didn't find a database entry for "imreg_dft"
 Warning--I didn't find a database entry for "open-cv"
 Warning--I didn't find a database entry for "scikit-image"
@@ -27,46 +26,5 @@ Warning--to sort, need author or key in open-cv-template-matching
 Too many commas in name 1 of "A. Thompson, D. Attwood, E. Gullikson, et.al." for entry x-ray-booklet
 while executing---line 1090 of file plain.bst
 Warning--empty journal in cliff-lorimer
-Warning--empty school in new-zeta-method
-You've used 7 entries,
-            2118 wiz_defined-function locations,
-            546 strings with 5000 characters,
-and the built_in function-call counts, 1503 in all, are:
-= -- 137
-> -- 49
-< -- 0
-+ -- 22
-- -- 14
-* -- 75
-:= -- 257
-add.period$ -- 17
-call.type$ -- 7
-change.case$ -- 26
-chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 63
-empty$ -- 146
-format.name$ -- 14
-if$ -- 314
-int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 4
-newline$ -- 34
-num.names$ -- 12
-pop$ -- 47
-preamble$ -- 1
-purify$ -- 21
-quote$ -- 0
-skip$ -- 51
-stack$ -- 0
-substring$ -- 54
-swap$ -- 6
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 26
-warning$ -- 3
-while$ -- 13
-width$ -- 8
-write$ -- 65
+Warning--empty school in sped-thesis
 (There were 2 error messages)

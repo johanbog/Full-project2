@@ -78,7 +78,7 @@ A = \frac{(\nicefrac{\mu}{\rho})_{sp}\rho t \mathrm{cosec} \alpha}{1-\exp[-(\nic
 \label{eq:Abs-corr}
 \end{equation}
 
-where $(\nicefrac{\mu}{\rho})$ is the mass absorption coefficient of the characteristic X-ray line, and $\alpha$ is the X-ray take-off angle (++++++++ this is kinda plagiarizing). Absorption correction is implemented by multiplying this term to the intensity $I$ in \cref{eq:zeta-eq}, giving 
+where $(\nicefrac{\mu}{\rho})$ is the mass absorption coefficient for the specific X-ray line, and $\alpha$ is the X-ray take-off angle. Absorption correction is implemented by multiplying this term to the intensity $I$ in \cref{eq:zeta-eq}, giving 
 \begin{equation}
 \rho t = \zeta \frac{I}{C D_e} A
 \end{equation}
@@ -94,10 +94,10 @@ As both the $\zeta$-factor and the $k$-factor in \cref{eq:zeta-eq, eq:CL-eq} are
 
 \begin{equation}
 \label{compare_zeta_CL}
-\frac{\zeta_A}{\zeta_B} \equiv \frac{k_{AB}} = \frac{k_{AX}}{k_{BX}},
+\frac{\zeta_A}{\zeta_B} \approx \frac{k_{AB}} = \frac{k_{AX}}{k_{BX}},
 \end{equation}
 
-where $X$ denotes the element which the $k$-values have been measured with respect to (usually Si).
+where $X$ denotes the element which the $k$-values have been measured with respect to.
 
 \section{Electron diffraction}\label{ED}
 When electron diffraction is performed in a TEM, a beam of electrons is transmitted through the specimen. As the electrons pass through, some are scattered due to the atomic potentials in the specimen. By detecting the positions of the electrons after they have been transmitted through the specimen, a diffraction pattern is obtained. Analyzing this diffraction pattern can determine the characteristics of the specimen, for example whether it is crystalline or amorphous, if there are several phases present, and if crystalline, what its crystallographic characteristics are. This information can not be obtained through EDX.
@@ -105,7 +105,7 @@ When electron diffraction is performed in a TEM, a beam of electrons is transmit
 Electron diffraction in a STEM, or scanning electron diffraction (SED) works similarly to EDX in STEM: A parallel electron probe is scanned over the specimen in a raster pattern, and the resulting 2-dimensional diffraction pattern is recorded for each pixel. The result is a 4-dimensional dataset: Two axes in real space and two in reciprocal space.
 
 	\subsection{Diffraction theory}
-When discussing the diffraction of electrons, it is convenient to regard the electrons as waves. When a parallel electron wave with a wave vector $\vec{k}_i$ reaches the specimen, the electrons will scatter to different angles $\theta$. Assuming the scattering is purely elastic, i.e. the energy of the electrons is conserved, the wave vectors of the scattered electrons will be equal in magnitude to the wave vector of the incoming electrons, $\vert \vec{k}_s \vert = \vert \vec{k}_i \vert = \nicefrac{2\pi}{\lambda}$.
+When discussing the diffraction of electrons, it is convenient to regard the electrons as waves. When a parallel electron wave with a wave vector $\vec{k}_i$ reaches the specimen, the electrons will scatter to different angles $\theta$. Assuming the scattering is purely elastic, i.e. the energy of the electrons is conserved, the wave vectors of the scattered electrons will be equal in magnitude to the wave vector of the incoming electrons, $\vert \vec{k}_s \vert = \vert \vec{k}_i \vert = \nicefrac{1}{\lambda}$.
 
 +++ figure here
 
@@ -124,6 +124,7 @@ The equivalence of Bragg's law in reciprocal space is the Laue condition. In ord
 \vec{R}_n=n_1 \vec{a}_1 + n_2 \vec{a}_2 + n_3 \vec{a}_3,
 \end{equation}
 where the vectors $\vec{a}_i$ are called the lattice vectors, and $n_i$ are integers. If the phase difference is to be equal to zero, so that Bragg's law (\cref{braggs law}) is fulfilled, we get the condition
+
 \begin{equation}
 \label{eq:laue-cond-1}
 \vec{R}_n \cdot \vec{Q} = 2 \pi N,
@@ -131,20 +132,30 @@ where the vectors $\vec{a}_i$ are called the lattice vectors, and $n_i$ are inte
 
 where $N$ is an integer. To solve this equation, let us first define the reciprocal lattice. Similarly to the definition of the real-space lattice in \cref{eq:real-lattice}, the reciprocal lattice can be defined as
 \begin{equation}
-\vec{G} = h \vec{a*}_1 + k \vec{a*}_2 + l \vec{a*}_3,
+\vec{G}_{hkl} = h \vec{a*}_1 + k \vec{a*}_2 + l \vec{a*}_3,
 \end{equation}
 
-where $h$, $k$ and $l$ are integers, and the reciprocal lattice vectors $\vec{a*}_i$ satisfy the condition
+where $h$, $k$ and $l$ are integers, and the vectors $\vec{a*}_i$ satisfy the condition
 \begin{equation*}
-\vec{a*}_i \cdot \vec{a}_j} = \delta_{ij},
+\vec{a*}_i \cdot \vec{a}_j = \delta_{ij},
 \end{equation*}
 
 where $\delta$ is the Kronecker delta. It is now seen that the reciprocal lattice vectors $\vec{G}$ satisfy \cref{eq:laue-cond-1}, as the scalar product $\vec{G} \cdot \vec{R}_n$ is an integer. The Laue condition can now be written as
 \begin{equation}
 \vec{Q} = \vec{G}
 \end{equation}
+In other words, there will be constructive interference only when the scattering vector $\vec{Q}$ equals a reciprocal lattice vector $\vec{G}_{hkl}$.
 
-The Laue condition states that there will be constructive interference only when the scattering vector $\vec{Q}$ equals the reciprocal lattice vector $\vec{G}$. 
+\begin{figure}
+	\centering
+	\includegraphics[width=.7\linewidth]{fig/other/ewald-sphere}
+	\label{fig:ewald-sphere}
+	\caption{Ewald sphere. From Modern x-ray physics.}
+\end{figure}
+
+The Laue condition can be visualized through the Ewald sphere construction. \cref{fig:ewald-sphere} shows the reciprocal lattice, the wave vectors of the incoming and the scattered waves, and a circle with radius $\vert \vec{k}_i \vert = \lambda^{-1}$. The incoming wave vector $\vec{k}_i$ terminates on a reciprocal lattice point, which is where the diffracted wave vector $\vec{k}_s$ originates. $\vec{k}_s$ can terminate anywhere on the Ewald sphere, but the Laue condition will be satisfied only if it terminates on a lattice point. 
+
+
 
 % After being transmitted and scattered, the waves will interfere with each other. Due to the electrons being scattered to different angles, their path lengths will be different and they will have different phases. The scattering angles at which the electrons will be in phase is called the  Bragg's law introduces the Bragg angle $\theta_B$, which is the scattering angle at which there will be constructive interference:
 %
@@ -182,22 +193,38 @@ The Laue condition states that there will be constructive interference only when
 %
 %where $m$ is an integer. This equation states that only 
 
-+++++++ Mention kinematic and dynamical scattering
-
-
 	\subsection{Electron diffraction in STEM}
 	
 	\subsection{Scanning Precession Electron Diffraction (SPED)}
-Scanning precession electron diffraction (SPED) is a modification of SED. Figure \ref{fig:precession} shows the schematic of SPED. The electron beam is now tilted a fixed angle and precessed around the vertical axis. The beam will hit the sample at the same spot during the precession, only the direction of the incoming beam will be changed. The diffracted beam is also precessed so that the location of the diffraction spots is invariant. The precession speed is set so that the beam does a full rotation at every pixel in the raster pattern.
-
-There are several reasons why adding precession to electron diffraction gives a better results. The perhaps most important is that the Ewald sphere (see Figure +++++++) is precessed in reciprocal space, leading to more diffraction spots being visible. Another major improvement is the reduction of dynamical effects in the diffraction pattern. Double scattering results in certain diffraction spots appearing, even though these do not satisfy Bragg's law. By tilting the incoming electron beam it no longer enters the sample at the exact zone axis, resulting in fewer dynamic effects  ++++++ explain this \cite{new-zeta-method}.
 
 \begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{fig/precession}
-\caption{}
-\label{fig:precession}
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig/other/SPED-apparatus}
+	\caption{Figure from \cite{sped-thesis}}
+	\label{fig:precession}
 \end{figure}
+
+Scanning precession electron diffraction (SPED) is a modification of SED. \cref{fig:precession} shows the schematic of SPED. The electron beam is now tilted a fixed angle $\phi$ and precessed around the vertical axis. The beam will hit the sample at the same spot during the precession; only the direction of the incoming beam will be changed. The diffracted beam is also precessed so that the locations of the diffraction spots remain fixed during the precession. 
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/dyndiff1}
+		\caption{}
+		\label{fig:dyndiff1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/dyndiff2}
+		\caption{}
+		\label{fig:dyndiff2}
+	\end{subfigure}
+	\caption{
+		\label{fig:dyndiff}%
+		From \cite{williams-carter}}
+\end{figure}
+
+There are several reasons why adding precession to electron diffraction gives better results. The perhaps most important is that the Ewald sphere is precessed in reciprocal space. This causes the Laue condition to be fulfilled for a higher number of reciprocal lattice points, resulting in more visible spots in the diffraction pattern. Another major improvement is the reduction of dynamical effects, in particular double diffraction, in the diffraction pattern. Double diffraction occurs when an electron is scattered twice, and can result in diffraction spots appearing even though they do not satisfy the Laue condition. As the beam is being precessed, dynamical effects are to a large extent averaged out \cite{williams-carter, sped-thesis}. \cref{fig:dyndiff} shows an example of how using a larger precession angle causes a reduction of dynamical effects.
 
 
 \section{Data analysis}
@@ -211,8 +238,32 @@ Template matching is used for finding the location in a reference image where a 
 
 Here, $(x,y)$ are the coordinates of the reference image, $(x',y')$ the coordinates of the template, $I(x,y)$ is the value of the pixel $(x,y)$ in the reference image and $T$ likewise in the template. The matching value $R(x,y)$ can take any value between $0$ and $1$, where $0$ means a perfect match and $1$ a perfect mismatch.
 
-	\subsection{Rescaling and rotating multidimensional data}
-Attempting to rescale and rotate a multidimensional array can be problematic. A rotation that is not a multiple of 90 degrees will lead to jagged edges, and zero-values will have to be added to make it rectangular again. An even bigger problem is rescaling an array. If the new lengths along each axis are divisors of the original lengths, it is relatively easy. For example, rescaling a 10x10 array into a 5x5 array is simple as each value in the new array can be calculated as the mean of the corresponding 4 values (2x2) in the original array. This is called down-sampling, and causes information to be lost. Likewise, if rescaling the 10x10 into a 20x20 array, each value in the 10x10 array now corresponds to four values (2x2) in the 20x20 array. These four values can be given the same value as the one in the original array. This procedure is called up-sampling, and new information is added.
-+++++ add figure to explain
+	\subsection{Re-binning and rotating multidimensional data}
+	
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/rebin1}
+		\caption{}
+		\label{fig:rebin1}
+	\end{subfigure}
+	\hfill
+		\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/rebin3}
+		\caption{}
+		\label{fig:rebin3}
+	\end{subfigure}
+	\hfill
+		\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/rebin2}
+		\caption{}
+		\label{fig:rebin2}
+	\end{subfigure}
+\caption{
+\label{fig:rebin}%
+Rebin figures}
+\end{figure}
 
-However, if the new lengths of the array are not divisible by the original lengths, the rescaling procedure is no longer as easy to conceptualize. If instead of a two-dimensional array we now have a 3-dimensional one, where two of the dimensions are in real space and the third in signal space. This is the format of EDX data taken in STEM mode. Rescaling the real-space axes of this array will necessarily also change the signal axis. One way to solve this problem is to linearly interpolate the signal. The 10x10 array now denotes the real space of the EDX dataset. If it is down-sampled by a scale factor of $s=7.1$, it will become a 2x2 array. The top left value will now consist of the sum of the 7x7=49 top left values in the original matrix, plus 10 percent of the 8'th row and column. In the same way, the bottom right value will be the sum of the 2x2=4 bottom right values in the original matrix, plus 90 percent of the 8'th row and column. The array has now been linearly rebinned. 
+Attempting to re-bin and rotate a multidimensional array can be problematic. A rotation that is not a multiple of 90 degrees will lead to jagged edges, and zero-values will have to be added to make it rectangular again. An even bigger problem occurs when re-binning an array. If the new lengths along each axis are divisors of the original lengths, it is relatively easy. \cref{fig:rebin1} shows a 4x4 array, where each value is visualized by a color. Rescaling this array by a factor of $s=2.0$ is simple as each value in the new array can be calculated as the mean of the corresponding 4 values (2x2 array) in the original array, resulting in the array in \cref{fig:rebin3}. This is called down-sampling, and causes information to be lost. Likewise, if re-binning the 4x4 by a factor of $s=0.5$, each value in the original array now corresponds to four values (2x2) in the new 8x8 array. These four values can simply be given the same value as the one in the original array. This procedure is called up-sampling, and new information is added.
+
+However, if the new lengths of the array are not divisible by the original lengths, the re-binning procedure is no longer as easy to conceptualize. Imagine that instead of a two-dimensional array we now have a 3-dimensional one, where two of the dimensions are in real space and the third in signal space. This is the format of EDX data taken in STEM mode. Rescaling the real-space axes of this array will necessarily also change the signal axis. One way to solve this problem is to linearly interpolate the signal. Let the array in \cref{fig:rebin1} now denote the EDX dataset, with each color representing an EDX spectrum. If it is down-sampled by a scale factor of for example $s=2.3$, it will become a 2x2 array as before. However, as shown in \cref{fig:rebin2}, it is no longer as trivial. The top left value will now consist of the sum of the 2x2=4 top left values in the original matrix, plus 30 percent of the 3rd row and column. In the same way, the bottom right value will be the sum of the 2x2=4 bottom right values in the original matrix, plus 70 percent of the 3rd row and column. The result will be similar to \cref{fig:rebin3}, except that the colors (or spectra) will be slightly different. This process is called linear re-binning.

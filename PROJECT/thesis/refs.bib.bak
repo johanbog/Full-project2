@@ -31,10 +31,9 @@
 	Title={Quantitative analysis of thin foils using EMMA-4 - the ratio technique},
 	Year= {1972}
 }
-
-@PhdThesis{new-zeta-method,
+{new-zeta-method,
 	Author=	{Christopher Su-Yan Own},
-	title={System Design and Verification of the Precession Electron Diffraction Technique},
+	title={System Design and Verification of the Precession Electron Diffraction Technique}
 	year=2005,
 	institution={Northwestern University}
 }
@@ -58,10 +57,20 @@
   url    = {http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/},
 }
 
+@PhdThesis{sped-thesis,
+  author      = {Christopher Su-Yan Own},
+  title       = {System Design and Verification of the Precession Electron Diffraction Technique},
+  year        = {2005},
+  institution = {Northwestern University},
+}
+
+@Electronic{open-cv-template-matching,
+  month = nov,
+  year  = {2014},
+  title = {Template Matching},
+  url   = {http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
-
-	
-	
-	
 %2nd ed., 2001, Lawrence Berkeley National Laboratory, University of California Berkeley, CA, \url{http://xdb.lbl.gov/xdb-new.pdf}

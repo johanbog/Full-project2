@@ -18,8 +18,11 @@
 \usepackage{hyperref}
 \usepackage[capitalize]{cleveref}
 \usepackage{subcaption}
+\captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
+\renewcommand\thesubfigure{(\alph{subfigure})}
 \usepackage{nicefrac}
 \usepackage{printlen}
+\usepackage{parskip}
 \usepackage{siunitx}				
 	\sisetup{exponent-product = \cdot}      
 	\sisetup{output-decimal-marker  =  {.}} 	
