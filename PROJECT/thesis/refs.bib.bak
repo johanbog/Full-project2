@@ -71,6 +71,20 @@
   url   = {http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html},
 }
 
+@MastersThesis{andreas,
+  author = {Andreas Garmannslund},
+  title  = {Refinement of the ζ-factor Method for Quantitative Energy-Dispersive X-ray Spectroscopy in Scanning Transmission Electron Microscopy},
+  school = {Norwegian University of Science and Technology},
+  year   = {2016},
+}
+
+@Misc{aarholt-rotation,
+  author       = {Thomas Aarholt},
+  title        = {rotate},
+  howpublished = {\url{https://github.com/thomasaarholt/hyperspy/tree/rotate}},
+  year         = {2016},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 %2nd ed., 2001, Lawrence Berkeley National Laboratory, University of California Berkeley, CA, \url{http://xdb.lbl.gov/xdb-new.pdf}

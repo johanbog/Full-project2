@@ -230,6 +230,7 @@ There are several reasons why adding precession to electron diffraction gives be
 \section{Data analysis}
 	\subsection{(Introduction)}
 	\subsection{Template matching}
+	\label{sec:theory/template-matching}
 Template matching is used for finding the location in a reference image where a template image fits best. The function \textit{MatchTemplate} in the python library OpenCV does this by sliding the template image over the reference image, and recording how well it fits at each point. This matching value is given as the normed square difference between the two images for each pixel in the reference image:
 \begin{equation}
  R(x,y)= \frac{\sum_{x',y'} (T(x',y')-I(x+x',y+y'))^2}{\sqrt{\sum_{x',y'}T(x',y')^2 \cdot \sum_{x',y'} I(x+x',y+y')^2}}
@@ -239,6 +240,7 @@ Template matching is used for finding the location in a reference image where a 
 Here, $(x,y)$ are the coordinates of the reference image, $(x',y')$ the coordinates of the template, $I(x,y)$ is the value of the pixel $(x,y)$ in the reference image and $T$ likewise in the template. The matching value $R(x,y)$ can take any value between $0$ and $1$, where $0$ means a perfect match and $1$ a perfect mismatch.
 
 	\subsection{Re-binning and rotating multidimensional data}
+	\label{sec:rebin-rotate}
 	
 \begin{figure}
 	\centering

@@ -11,18 +11,10 @@ A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: appendix-b.aux
 The style file: plain.bst
 Database file #1: refs.bib
-Warning--entry type for "open-cv-ECC" isn't style-file defined
---line 52 of file refs.bib
-Warning--entry type for "open-cv-template-matching" isn't style-file defined
---line 67 of file refs.bib
-Warning--I didn't find a database entry for "imreg_dft"
-Warning--I didn't find a database entry for "open-cv"
-Warning--I didn't find a database entry for "scikit-image"
+Warning--I didn't find a database entry for "hyperspyUI"
 Warning--I didn't find a database entry for "hyperspy"
-Warning--I didn't find a database entry for "andreas"
 Too many commas in name 1 of "A. Thompson, D. Attwood, E. Gullikson, et.al." for entry x-ray-booklet
 while executing---line 1049 of file plain.bst
-Warning--to sort, need author or key in open-cv-template-matching
 Too many commas in name 1 of "A. Thompson, D. Attwood, E. Gullikson, et.al." for entry x-ray-booklet
 while executing---line 1090 of file plain.bst
 Warning--empty journal in cliff-lorimer
