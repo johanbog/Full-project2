@@ -20,14 +20,14 @@ Andreas Garmannslund.
 \newblock Refinement of the ζ-factor method for quantitative energy-dispersive
   x-ray spectroscopy in scanning transmission electron microscopy.
 \newblock Master's thesis, Norwegian University of Science and Technology,
-  2016.
+  2016.exit
 
 \bibitem{zeta-method}
 D.~B.~Williams M.~Watanabe.
 \newblock The quantitative analysis of thin specimens: a review of progress
   from the cliff-lorimer to the new $\zeta$-factor methods.
 \newblock {\em Journal of Microscopy}, 221:89--109, 2 2006.
-
+exi
 \bibitem{kate-binning}
 Kate MacArthur.
 \newblock linear\_rebin.

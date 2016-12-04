@@ -8,32 +8,64 @@ The results will be introduced in the same order as the experiments were conduct
 
 \section{Dataset matching}
 
-\cref{fig:edx-in-sped} shows the results of matching the largest EDX dataset with the SPED dataset. As explained in \cref{sec:method/dataset matching}, these images have been processed to be made more similar. \cref{fig:edx-in-sped-edx} shows the EDX image and \cref{fig:edx-in-sped-rectangle} shows the SPED image with a rectangle indicating where the best fit of the EDX image was found. 
+\cref{fig:edxsped} shows the results of matching the largest EDX dataset with the SPED dataset. \cref{fig:edxspedorig} shows the first result, with the SPED dataset rotated by the manually estimated angle, and the EDX dataset scaled using the scale factor obtained from the metadata. In \cref{fig:edxspedrot}, the angle has been iteratively optimized, and therefore increased by 0.4\%. \cref{fig:edxspedboth1} shows the third result, where both the rotation angle and he scale factor has been optimized, and the EDX image has been filtered to include less of the melted region. This led to an increase in the angle of 2.8\% from the manually estimated one, while the scale factor was reduced by 7\%. Should processed images be shown as well?%\cref{fig:edxspedboth1} also shows the third result, but here with the processed images.
+
+% As explained in \cref{sec:method/dataset matching}, these images have been processed to be made more similar. \cref{fig:edx-in-sped-edx} shows the EDX image and \cref{fig:edx-in-sped-rectangle} shows the SPED image with a rectangle indicating where the best fit of the EDX image was found. 
 
 \begin{figure}
-\begin{subfigure}{.5\textwidth}
 	\centering
-	\includegraphics[width=\linewidth]{fig/in-rectange}
-	\caption{++++++}
-	\label{fig:edx-in-sped-edx}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-	\centering
-	\includegraphics[width=\linewidth]{fig/sdrot-with-rectange}
-	\caption{++++++}
-	\label{fig:edx-in-sped-rectangle}
-\end{subfigure}
-\caption{plots of....}
-\label{fig:edx-in-sped}
+	\begin{subfigure}{0.33\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/edxinsped/orig5-2}
+		\caption{}
+		\label{fig:edxspedorig}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}{0.33\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/edxinsped/rot5-2}
+		\caption{}
+		\label{fig:edxspedrot}
+	\end{subfigure}%
+	\begin{subfigure}{0.33\textwidth}
+	\includegraphics[width=\textwidth]{fig/other/edxinsped/show/both1-2}
+	\caption{}
+	\label{fig:edxspedboth1}
+	\end{subfigure}
+%	\hfill
+%	\begin{subfigure}{0.25\textwidth}
+%		\includegraphics[width=\textwidth]{fig/other/edxinsped/show/both2-2}
+%		\caption{}
+%		\label{fig:edxspedboth2}
+%	\end{subfigure}%
+	\caption{
+		\label{fig:edxsped}%
+		Caption}
 \end{figure}
+
+
+%\begin{figure}
+%\begin{subfigure}{.5\textwidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{fig/in-rectange}
+%	\caption{++++++}
+%	\label{fig:edx-in-sped-edx}
+%\end{subfigure}%
+%\begin{subfigure}{.5\textwidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{fig/sdrot-with-rectange}
+%	\caption{++++++}
+%	\label{fig:edx-in-sped-rectangle}
+%\end{subfigure}
+%\caption{plots of....}
+%\label{fig:edx-in-sped}
+%\end{figure}
 
 %As the correct result is unknown, it is difficult to quantify the error in the fit. An attempt was made by looking at the difference between the matching value for the best position, shown in \cref{fig:edx-in-sped-rectangle}, and the higher values. The matching values are defined in \cref{eq:matching value}. \cref{fig:edx-sped-rectangle-match-graph} shows the relative error of the 100 best matching values with respect to the best match. 
 
-\begin{figure}
-	\includegraphics[width=0.7\linewidth]{fig/edx-sped-rectangle-match-graph.png}
-	\caption{++++++}
-	\label{fig:edx-sped-rectangle-match-graph}
-\end{figure}
+%\begin{figure}
+%	\includegraphics[width=0.7\linewidth]{fig/edx-sped-rectangle-match-graph.png}
+%	\caption{++++++}
+%	\label{fig:edx-sped-rectangle-match-graph}
+%\end{figure}
 
 The results from locating the EDX datasets in the HAADF overview images are displayed in \cref{fig:nonheated-images-in-overview, fig:heated-images-in-overview} for the non-treated and the heat-treated samples, respectively. In the non-treated sample, the two datasets B and D were not correctly located in the overview image. The calculated location of dataset B was completely off, while the position of D was just slightly offset. The actual positions of these datasets were estimated by eye and marked in \cref{fig:nonheated-images-in-overview} as blue dotted rectangles. The rest of the datasets were located correctly, and their positions are shown as red rectangles. For the heat-treated sample, all the datasets that were included in the overview image were correctly located. However, the areas covered by two the datasets A and B were found to not be included in the overview image.
 
@@ -98,10 +130,10 @@ The calculated $\zeta$-values for all the elements present in the sample are pre
 	Pd & B  & 1318\\
 %	AuL & B  & 3450\\ 
 %	AuL & C  & 3473\\
-	Au & B & 2397\\
+	AuM & B & 2397\\
 	AuM & C & 2387\\
 	\hline
-	\end{tabular} 
+	\end{tabular}
 	\end{center}
 	\label{tab:non-heated zeta-values}
 \end{table}
@@ -110,6 +142,9 @@ These values have been
 
 
 \section{Quantification}
+
+This must be written better. But where should it come? Experimental, results or discussion?
+The choice of which characteristic peaks to use for different areas in the sample needs to be addressed first. First of all, the Ge\_{K$\alpha$}-peak has a significant overlap with the Au\_{L$\alpha$}-peak, which is why the Au\_{M$\alpha$}-peak was used. Secondly, when attempting to calculate the composition of Ga and As simultaneously with Au, the results were very bad. Thirdly, if measuring the composition of Ga and As simultaneously with Ge, using the Ge\_{L$\alpha$}-peak, all three techniques said there was 10\% Ge in the area known to consist of only Ga and As. This did not happen while using the Ge\_{K$\alpha$}-peak. To conclude, when measuring elements Ga, As, Ge and Pd, the Ge\_{K$\alpha$}-peak was used, but when measuring elements Ge, Pd and Au, the Ge\_{L$\alpha$}-peak was used.
 
 \cref{fig:zeta_area1,fig:zeta_area2} shows the compositions of two areas (\cref{fig:zeta_area1_overview,fig:zeta_area2_overview} shows the locations of these areas) in the untreated sample, as calculated using the Cliff-Lorimer ratio method (CL method) and the $\zeta$-factor method with and without absorption correction. All the spectra have been averaged in the horizontal direction. The results are as expected. \cref{fig:zeta_area1_ga,fig:zeta_area1_as} shows that the nanowire consists of Ga and As in a 50/50 ratio, and \cref{fig:zeta_area1_ge,fig:zeta_area1_pd} shows that the next two layers are approximately 100\% Pd and Ge. In the second area, \cref{fig:zeta_area2_pd,fig:zeta_area2_ge,fig:zeta_area2_au} shows that the composition of elements are approximately 100\% Au in the top region, 100\% Pd in the middle and 100\% Ge in the lower region.
 
@@ -142,7 +177,7 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 	\end{subfigure}
 		\begin{subfigure}{.5\textwidth}
 			\centering
-			\includegraphics[width=\linewidth]{fig/q/1_all-abscorr4}
+			\includegraphics[width=\linewidth]{fig/q/1_all_abscorr4}
 			\caption{}
 			\label{fig:zeta_area1_all}
 	\end{subfigure}%
@@ -160,63 +195,59 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 \begin{figure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{fig/q/2_pd_nm_GeL}
-		\caption{}
+		\includegraphics[width=\linewidth]{fig/q/2_Pd2}
+		\caption{Pd}
 		\label{fig:zeta_area2_pd}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{fig/q/2_ge_nm_GeL}
-		\caption{}
+		\includegraphics[width=\linewidth]{fig/q/2_Ge2}
+		\caption{Ge}
 		\label{fig:zeta_area2_ge}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{fig/q/2_au_nm_GeL}
-		\caption{++++++}
+		\includegraphics[width=\linewidth]{fig/q/2_Au2}
+		\caption{Au}
 		\label{fig:zeta_area2_au}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{fig/q/2_all_abscorr_GeL}
-		\caption{++++++}
+		\includegraphics[width=\linewidth]{fig/q/2_all_abscorr2}
+		\caption{All}
 		\label{fig:zeta_area2_all}
 	\end{subfigure}
 		\centering
 	\begin{subfigure}{.5\textwidth}
-		\includegraphics[width=\linewidth]{fig/q/2_overview}s
-		\caption{++++++}
+		\includegraphics[width=\linewidth]{fig/q/2_overview}
+		\caption{Overview}
 		\label{fig:zeta_area2_overview}
 	\end{subfigure}
 	\caption{plots of....}
 	\label{fig:zeta_area2}
 \end{figure}
 
-The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method with absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method without absorption correction). The areas D and E are located, as seen in \cref{fig:heated-images-in-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification was done with the assumption that the regions only contained Ga, As, Pd and/or Ge, because the inclusion of Au introduced errors, as explained above (+++ explain this above). The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outliers.
-
-The upper right region in \cref{fig:Das,fig:Dga}, which is the edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-35\% being Ge. 
-
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_As_zetaAbs}
-		\caption{}
+	\begin{subfigure}{0.5\linewidth}
+		\includegraphics[width=\linewidth]{fig/q/D_heated/_binned_As_zetaAbs}
+		\caption{As}
 		\label{fig:Das}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_Ga_zetaAbs}
-		\caption{}
+	\begin{subfigure}{0.5\linewidth}
+		\includegraphics[width=\linewidth]{fig/q/D_heated/_binned_Ga_zetaAbs}
+		\caption{Ga}
 		\label{fig:Dga}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_Ge_zetaAbs}
 		\caption{Ge}
 		\label{fig:Dge}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_Pd_zetaAbs}
 		\caption{Pd}
 		\label{fig:Dpd}
@@ -227,63 +258,109 @@ The upper right region in \cref{fig:Das,fig:Dga}, which is the edge of the nanow
 
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_As_zetaAbs}
-		\caption{}
+		\caption{As}
 		\label{fig:Eas}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Ga_zetaAbs}
-		\caption{}
+		\caption{Ga}
 		\label{fig:Ega}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Ge_zetaAbs}
-		\caption{}
+		\caption{Ge}
 		\label{fig:Ege}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Pd_zetaAbs}
-		\caption{}
+		\caption{Pd}
 		\label{fig:Epd}
 	\end{subfigure}
 	\caption{plots of....}
 	\label{fig:E}
 \end{figure}
 
+The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method with absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method without absorption correction). The areas D and E are located, as seen in \cref{fig:heated-images-in-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification was done with the assumption that the regions only contained Ga, As, Pd and/or Ge, because the inclusion of Au introduced errors, as explained above (+++ explain this above). The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outliers.
+
+From \cref{fig:Das,fig:Dga,fig:Dge}, it is seen that the upper right region, which is the left edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-25\% being Ge and 0-5\% Pd. \cref{fig:Dge,fig:Dpd} shows that the lower left region consists of 40-50\% Ge, 40-50\% Pd, as well as about 5\% Ga and 5\% As. The upper left region consists of about 60-65\% Pd, 15-20\% Ge and about 10\% Ga and 10\% As. Likewise, \cref{fig:Eas,fig:Ega,fig:Ege} shows approximately the same composition on the left side (the right edge of the nanowire) as the right side in \cref{fig:D}. From looking at \cref{fig:Epd} as well, the upper right area consists of about 65-70\% Pd, 10-15\% Ge and about 10\% Ga and 10\% As, while the lower right consists of about 40-50\% Ge, 40-45\% Pd and 5\% Ga and 5\% As. These results are summarized in \cref{tab:D-E-composition}.
+
+\begin{table}
+	\caption{...}
+	\begin{center}
+		\begin{tabular}{r|cccc}			
+			Area & Ga & As &s Ge & Pd \\ 
+			\midrule
+			\hline
+			Inner & 35-45 & 35-45 & 10-25 & 0-5\\
+			Lower & 5 & 5 & 40-50 & 40-50\\
+			Upper & 10 & 10 & 10-20 & 60-70\\
+			\hline
+		\end{tabular} 
+	\end{center}
+	\label{tab:D-E-composition}
+\end{table}
+
+NW: GaAs=35-45,10-30Ge
+White: 60-65 Pd, 15-20 Ge, 10GaAs (D) 60-70 Pd, 10-15 Ge, 10GaAs
+Medium: 40-50 Ge, 40-50 Pd, 5GaAs (D) 40-50 Ge, 40-45 Pd, 5GaAs
+
+\cref{fig:BCF-overview} shows three areas whose average compositions were calculated using all three techniques. As previously mentioned, it was not possible to calculate the composition of Au simultaneously with Ga and As, so two separate calculations were performed. \cref{fig:BCF1} shows the results for Ga, As, Pd and Ge, while \cref{fig:BCF2} includes Pd, Ge and Au. 
+
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/B-C-F/B2}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/B-C-F/BCF}
 		\caption{}
-		\label{fig:BCF-plots-B}
+		\label{fig:BCF-overview}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.45\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/B-C-F/C2}
+	\begin{subfigure}{0.7\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/B-C-F/AsGaGePd}
 		\caption{}
-		\label{fig:BCF-plots-C}
+		\label{fig:BCF1}
 	\end{subfigure}
-	\begin{subfigure}{0.45\textwidth}
-	\includegraphics[width=\textwidth]{fig/q/B-C-F/F2}
-	\caption{}
-	\label{fig:BCF-plots-F}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.45\textwidth}
-	\includegraphics[width=\textwidth]{fig/q/B-C-F/all}
-	\caption{}
-	\label{fig:BCF-plots-all}
-\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.7\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/B-C-F/AuGePd}
+		\caption{}
+		\label{fig:BCF2}
+	\end{subfigure}
 	\caption{
-		\label{fig:BCF-plots}%
+		\label{fig:}%
 		Caption}
 \end{figure}
 
+%\begin{figure}
+%	\centering
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=\textwidth]{fig/q/B-C-F/B3}
+%		\caption{B - 1}
+%		\label{fig:BCF-plots-B}
+%	\end{subfigure}%
+%	\hfill
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=\textwidth]{fig/q/B-C-F/C3}
+%		\caption{C - 2}
+%		\label{fig:BCF-plots-C}
+%	\end{subfigure}
+%	\begin{subfigure}{0.5\textwidth}
+%	\includegraphics[width=\textwidth]{fig/q/B-C-F/F3}
+%	\caption{F - 3}
+%	\label{fig:BCF-plots-F}
+%	\end{subfigure}%
+%	\hfill
+%	\begin{subfigure}{0.5\textwidth}
+%		\includegraphics[width=\textwidth]{fig/q/B-C-F/all4}
+%		\caption{}
+%		\label{fig:BCF-plots-all}
+%	\end{subfigure}
+%	\caption{
+%		\label{fig:BCF-plots}%
+%		Caption}
+%\end{figure}
 
-Other results:
-Angle went from -92.2411 to -94.8174790902
-Scale was modified by a factor 0.925757575758
