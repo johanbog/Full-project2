@@ -105,41 +105,38 @@ In both figures, the red star is the value of the dataset used as reference, the
 
 \section{Determination of $\zeta$-values}
 
-The calculated $\zeta$-values for all the elements present in the sample are presented in \cref{tab:non-heated zeta-values}, along with which dataset was used to calculate them. All datasets are from the unheated sample except for C*, which is from the heated one.
+The calculated $\zeta$-values for all the characteristic X-ray lines used to quantify the data are presented in \cref{tab:non-heated zeta-values}, along with which dataset was used to calculate them. 
 
 \begin{table}
 	\caption{...}
 	\begin{center}
 	\begin{tabular}{ccc}
 
-	Element & Dataset & $\zeta$\\ 
+	Element (X-ray line) & Dataset & $\zeta$-value \\ 
 	\midrule
 	\hline
-	Ga & C* & 582\\
-	Ga & A  & 608\\
-	As & C* & 689\\
-	As & A  & 706\\
-	GeK & B  & 732\\
-	GeK & D  & 741\\
-	GeK & A  & 748\\
-	GeL & A & 933\\
-	GeL & D & 900\\
-	GeL & B & 900\\
-	Pd & E  & 1248\\
-	Pd & A  & 1284\\
-	Pd & B  & 1318\\
+	Ga (K$\alpha$)  & C* & 582\\
+	Ga (K$\alpha$)  & A  & 608\\
+	As (K$\alpha$)  & C* & 689\\
+	As (K$\alpha$)  & A  & 706\\
+	Ge (K$\alpha$)  & B  & 732\\
+	Ge (K$\alpha$)  & D  & 741\\
+	Ge (K$\alpha$)  & A  & 748\\
+	Ge (L$\alpha$)  & A  & 933\\
+	Ge (L$\alpha$)  & D  & 900\\
+	Ge (L$\alpha$)  & B  & 900\\
+	Pd (L$\alpha$)  & E  & 1248\\
+	Pd (L$\alpha$)  & A  & 1284\\
+	Pd (L$\alpha$)  & B  & 1318\\
 %	AuL & B  & 3450\\ 
 %	AuL & C  & 3473\\
-	AuM & B & 2397\\
-	AuM & C & 2387\\
+	Au (M$\alpha$) & B & 2397\\
+	Au (M$\alpha$) & C & 2387\\
 	\hline
 	\end{tabular}
 	\end{center}
 	\label{tab:non-heated zeta-values}
 \end{table}
-
-These values have been 
-
 
 \section{Quantification}
 
@@ -148,7 +145,7 @@ The choice of which characteristic peaks to use for different areas in the sampl
 
 \cref{fig:zeta_area1,fig:zeta_area2} shows the compositions of two areas (\cref{fig:zeta_area1_overview,fig:zeta_area2_overview} shows the locations of these areas) in the untreated sample, as calculated using the Cliff-Lorimer ratio method (CL method) and the $\zeta$-factor method with and without absorption correction. All the spectra have been averaged in the horizontal direction. The results are as expected. \cref{fig:zeta_area1_ga,fig:zeta_area1_as} shows that the nanowire consists of Ga and As in a 50/50 ratio, and \cref{fig:zeta_area1_ge,fig:zeta_area1_pd} shows that the next two layers are approximately 100\% Pd and Ge. In the second area, \cref{fig:zeta_area2_pd,fig:zeta_area2_ge,fig:zeta_area2_au} shows that the composition of elements are approximately 100\% Au in the top region, 100\% Pd in the middle and 100\% Ge in the lower region.
 
-All three techniques give fairly similar answers for Ga and As, while the difference between the CL- and $\zeta$-factor methods is significantly higher for Pd, Ge and Au. The inclusion of absorption correction does not give significantly different results for any of the elements, except for the Ge-region in the second area where the absorption correction appears to significantly amplify two peaks. \cref{fig:zeta_area1_all,fig:zeta_area2_all} shows the compositions of all the element as calculated using the $\zeta$-method with absorption correction. There is a clear transitioning length between each of the elements layers where the spectra shows characteristic peaks belonging to both elements. This length is shortest for the transition between GaAs and Pd, and longest between Pd and Ge.
+All three techniques give fairly similar answers for Ga and As, while the differences between the CL- and $\zeta$-factor methods are significantly higher for Pd, Ge and Au. The inclusion of absorption correction does not give significantly different results for any of the elements, except for the Ge-region in the second area where the absorption correction appears to significantly amplify two peaks. \cref{fig:zeta_area1_all,fig:zeta_area2_all} shows the compositions of all the element as calculated using the $\zeta$-method with absorption correction. There is a clear transitioning length between each of the elements layers where the spectra shows characteristic peaks belonging to both elements. This length is shortest for the transition between GaAs and Pd, and longest between Pd and Ge.
 
 \begin{figure}
 	\begin{subfigure}{.5\textwidth}
@@ -230,25 +227,25 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[width=\linewidth]{fig/q/D_heated/_binned_As_zetaAbs}
+		\includegraphics[width=\linewidth]{fig/q/D_heatedGeKline/As_zetaAbs}
 		\caption{As}
 		\label{fig:Das}
 	\end{subfigure}%
 	\hfill
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[width=\linewidth]{fig/q/D_heated/_binned_Ga_zetaAbs}
+		\includegraphics[width=\linewidth]{fig/q/D_heatedGeKline/Ga_zetaAbs}
 		\caption{Ga}
 		\label{fig:Dga}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_Ge_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/D_heatedGeKline/Ge_zetaAbs}
 		\caption{Ge}
 		\label{fig:Dge}
 	\end{subfigure}%
 	\hfill
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heated/_binned_Pd_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/D_heatedGeKline/Pd_zetaAbs}
 		\caption{Pd}
 		\label{fig:Dpd}
 	\end{subfigure}
@@ -259,25 +256,25 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_As_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/As_zetaAbs}
 		\caption{As}
 		\label{fig:Eas}
 	\end{subfigure}%
 	\hfill
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Ga_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Ga_zetaAbs}
 		\caption{Ga}
 		\label{fig:Ega}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Ge_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Ge_zetaAbs}
 		\caption{Ge}
 		\label{fig:Ege}
 	\end{subfigure}%
 	\hfill
 	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heated/_binned_Pd_zetaAbs}
+		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Pd_zetaAbs}
 		\caption{Pd}
 		\label{fig:Epd}
 	\end{subfigure}
@@ -285,29 +282,42 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 	\label{fig:E}
 \end{figure}
 
-The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method with absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method without absorption correction). The areas D and E are located, as seen in \cref{fig:heated-images-in-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification was done with the assumption that the regions only contained Ga, As, Pd and/or Ge, because the inclusion of Au introduced errors, as explained above (+++ explain this above). The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outliers.
+The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method with absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method without absorption correction). The areas D and E are located, as seen in \cref{fig:heated-images-in-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification was done with the assumption that the regions only contained Ga, As, Pd and/or Ge. The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outliers. An approximate quantification using the maps are 
 
-From \cref{fig:Das,fig:Dga,fig:Dge}, it is seen that the upper right region, which is the left edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-25\% being Ge and 0-5\% Pd. \cref{fig:Dge,fig:Dpd} shows that the lower left region consists of 40-50\% Ge, 40-50\% Pd, as well as about 5\% Ga and 5\% As. The upper left region consists of about 60-65\% Pd, 15-20\% Ge and about 10\% Ga and 10\% As. Likewise, \cref{fig:Eas,fig:Ega,fig:Ege} shows approximately the same composition on the left side (the right edge of the nanowire) as the right side in \cref{fig:D}. From looking at \cref{fig:Epd} as well, the upper right area consists of about 65-70\% Pd, 10-15\% Ge and about 10\% Ga and 10\% As, while the lower right consists of about 40-50\% Ge, 40-45\% Pd and 5\% Ga and 5\% As. These results are summarized in \cref{tab:D-E-composition}.
+%From \cref{fig:Das,fig:Dga,fig:Dge}, it is seen that the upper right region, which is the left edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-25\% being Ge and 0-5\% Pd. \cref{fig:Dge,fig:Dpd} shows that the lower left region consists of 40-50\% Ge, 40-50\% Pd, as well as about 5\% Ga and 5\% As. The upper left region consists of about 60-65\% Pd, 15-20\% Ge and about 10\% Ga and 10\% As. Likewise, \cref{fig:Eas,fig:Ega,fig:Ege} shows approximately the same composition on the left side (the right edge of the nanowire) as the right side in \cref{fig:D}. From looking at \cref{fig:Epd} as well, the upper right area consists of about 65-70\% Pd, 10-15\% Ge and about 10\% Ga and 10\% As, while the lower right consists of about 40-50\% Ge, 40-45\% Pd and 5\% Ga and 5\% As. These results are summarized in \cref{tab:D-E-composition}.
 
 \begin{table}
-	\caption{...}
+	\caption{For area D}
 	\begin{center}
-		\begin{tabular}{r|cccc}			
-			Area & Ga & As &s Ge & Pd \\ 
+		\begin{tabular}{r|ccccc}			
+			Area & Ga & As & Ge & Pd & Au\\ 
 			\midrule
 			\hline
-			Inner & 35-45 & 35-45 & 10-25 & 0-5\\
-			Lower & 5 & 5 & 40-50 & 40-50\\
-			Upper & 10 & 10 & 10-20 & 60-70\\
+			Inner & 45-55& 45-55 & 0-3 & 0-5 & -\\
+			Lower & 3-10& 3-10 & 25-40 & 50-65 & 0\\
+			Upper & 10-15& 10-15 & 10-20 & 65-73 & 0-2\\
 			\hline
 		\end{tabular} 
 	\end{center}
-	\label{tab:D-E-composition}
+	\label{tab:D-composition}
 \end{table}
 
-NW: GaAs=35-45,10-30Ge
-White: 60-65 Pd, 15-20 Ge, 10GaAs (D) 60-70 Pd, 10-15 Ge, 10GaAs
-Medium: 40-50 Ge, 40-50 Pd, 5GaAs (D) 40-50 Ge, 40-45 Pd, 5GaAs
+\begin{table}
+	\caption{For area E}
+	\begin{center}
+		\begin{tabular}{r|ccccc}			
+			Area & Ga & As &s Ge & Pd & Au\\ 
+			\midrule
+			\hline
+			Inner 1& 45-55 & 45-55 & 0-2 & 0-10 & -\\
+			Lower 1& 3-8 & 3-8 & 22-35 & 45-55 & 0\\
+			Upper 1& 5-15 & 5-15 & 2-12 & 65-75 & 0-2\\
+			\hline
+		\end{tabular} 
+	\end{center}
+	\label{tab:E-composition}
+\end{table}
+
 
 \cref{fig:BCF-overview} shows three areas whose average compositions were calculated using all three techniques. As previously mentioned, it was not possible to calculate the composition of Au simultaneously with Ga and As, so two separate calculations were performed. \cref{fig:BCF1} shows the results for Ga, As, Pd and Ge, while \cref{fig:BCF2} includes Pd, Ge and Au. 
 
