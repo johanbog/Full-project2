@@ -1,0 +1,130 @@
+% Encoding: UTF-8
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Marvin Rausand at 2014-08-12 10:34:20 +0200 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@book{williams-carter,
+	Address = {New York},
+	Author = {Williams, David B and C. Barry Carter},
+	Publisher = {Springer},
+	Title = {Transmission Electron Microscopy Part 1: Basics},
+	Year = {2009}}
+
+@misc{x-ray-booklet,
+	Address = {Lawrence Berkeley National Laboratory, University of California Berkeley, CA},
+	Author = "A. Thompson, D. Attwood, E. Gullikson, et.al.",
+	Title = {X-ray data booklet},
+	Year = "2001",
+
+	Url = "http://xdb.lbl.gov/xdb-new.pdf"
+}
+
+@article{cliff-lorimer,
+	Author= {G. Cliff, G.W. Lorimer},
+	Title={Quantitative analysis of thin foils using EMMA-4 - the ratio technique},
+	Year= {1972}
+}
+{new-zeta-method,
+	Author=	{Christopher Su-Yan Own},
+	title={System Design and Verification of the Precession Electron Diffraction Technique}
+	year=2005,
+	institution={Northwestern University}
+}
+
+@article{zeta-method,
+	Author= {M. Watanabe, D. B. Williams},
+	title = {The quantitative analysis of thin specimens: a review of progress
+	from the Cliff-Lorimer to the new $\zeta$-factor methods},
+	journal= {Journal of Microscopy},
+	year = 2006,
+	pages = {89-109},
+	month = 2,
+	volume = 221
+}
+
+@Electronic{open-cv-ECC,
+  author = {Satya Mallick},
+  month  = jul,
+  year   = {2015},
+  title  = {Image Alignment (ECC) in OpenCV ( C++ / Python )},
+  url    = {http://www.learnopencv.com/image-alignment-ecc-in-opencv-c-python/},
+}
+
+@PhdThesis{sped-thesis,
+  author      = {Christopher Su-Yan Own},
+  title       = {System Design and Verification of the Precession Electron Diffraction Technique},
+  year        = {2005},
+  institution = {Northwestern University},
+}
+
+@Electronic{open-cv-template-matching,
+  month = nov,
+  year  = {2014},
+  title = {Template Matching},
+  url   = {http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html},
+}
+
+@MastersThesis{andreas,
+  author = {Andreas Garmannslund},
+  title  = {Refinement of the ζ-factor Method for Quantitative Energy-Dispersive X-ray Spectroscopy in Scanning Transmission Electron Microscopy},
+  school = {Norwegian University of Science and Technology},
+  year   = {2016},
+}
+
+@Misc{aarholt-rotation,
+  author       = {Thomas Aarholt},
+  title        = {rotate},
+  howpublished = {\url{https://github.com/thomasaarholt/hyperspy/tree/rotate}},
+  year         = {2016},
+}
+
+@Book{eels-bok,
+  title     = {Electron Energy-Loss Spectroscopy in the Electron Microscope},
+  publisher = {Springer},
+  year      = {2011},
+  author    = {R.F. Egerton},
+}
+
+@Article{logratio-article,
+  author  = {T. Malis, S. C. Cheng, R. F. Egerton},
+  title   = {EELS log ratio technique for specimen-thickness measurement in the TEM},
+  journal = {Journal of Electron Microscopy Technique},
+  year    = {1988},
+  volume  = {8},
+  number  = {2},
+  pages   = {193-200},
+}
+
+@Misc{hyperspy,
+  author = {Francisco de la Peña and Tomas Ostasevicius and Vidar Tonaas Fauske and Pierre Burdet and Petras Jokubauskas and Mike Sarahan and Duncan Johnstone and Magnus Nord and Josh Taillon and Jan Caron and Katherine E. MacArthur and Alberto Eljarrat and Stefano Mazzucco and Tom Furnival and Eric Prestat and Michael Walls and Gaël Donval and Ben Martineau and Luiz Fernando Zagonel and Andreas Garmannslund and Thomas Aarholt and Christoph Gohlke and iygr},
+  title  = {hyperspy: HyperSpy 1.1.1},
+  month  = aug,
+  year   = {2016},
+  doi    = {10.5281/zenodo.59293},
+  url    = {http://dx.doi.org/10.5281/zenodo.59293},
+}
+
+@Misc{hyperspyUI,
+  author       = {Vidar Tonaas Fauske},
+  title        = {HyperSpyUI 0.6.1},
+  howpublished = {\url{http://hyperspy.org/hyperspyUI/}},
+  year         = {2016},
+}
+
+@Misc{kate-binning,
+  author       = {Kate MacArthur},
+  title        = {linear\_binning},
+  howpublished = {\url{https://github.com/k8macarthur/hyperspy/tree/Non\_Integer\_Binning}},
+  year         = {2016},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+%2nd ed., 2001, Lawrence Berkeley National Laboratory, University of California Berkeley, CA, \url{http://xdb.lbl.gov/xdb-new.pdf}

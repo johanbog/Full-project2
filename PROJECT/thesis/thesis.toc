@@ -15,24 +15,24 @@
 \contentsline {subsection}{\numberline {2.2.2}Quantitative X-ray Analysis}{6}{subsection.2.2.2}
 \contentsline {subsubsection}{The Cliff-Lorimer ratio technique}{7}{section*.9}
 \contentsline {subsubsection}{The $\zeta $-factor method}{8}{section*.10}
-\contentsline {section}{\numberline {2.3}Electron diffraction}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Thickness estimation}{9}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Electron diffraction}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Diffraction theory}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Electron diffraction in STEM}{13}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Scanning Precession Electron Diffraction (SPED)}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.2}Electron diffraction in STEM}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Scanning Precession Electron Diffraction (SPED)}{12}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Data analysis}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}(Introduction)}{14}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Template matching}{14}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Re-binning and rotating multidimensional data}{14}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Experimental}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Equipment}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Material}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Dataset matching}{16}{section.3.3}
-\contentsline {section}{\numberline {3.4}Quantitative analysis}{18}{section.3.4}
-\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dataset matching}{20}{section.4.1}
-\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{23}{section.4.2}
+\contentsline {subsection}{\numberline {2.4.1}Template matching}{14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Re-binning and rotating multidimensional data}{14}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Experimental}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Equipment}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Material}{17}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dataset matching}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Quantitative analysis}{19}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dataset matching}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{24}{section.4.2}
 \contentsline {section}{\numberline {4.3}Quantification}{24}{section.4.3}
-\contentsline {chapter}{\numberline {A}Acronyms}{31}{appendix.A}
-\contentsline {chapter}{\numberline {B}Additional Information}{32}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{32}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{32}{subsection.B.1.1}
+\contentsline {chapter}{\numberline {A}Acronyms}{33}{appendix.A}
+\contentsline {chapter}{\numberline {B}Additional Information}{34}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{34}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{34}{subsection.B.1.1}

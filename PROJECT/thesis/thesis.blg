@@ -11,8 +11,6 @@ A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: appendix-b.aux
 The style file: plain.bst
 Database file #1: refs.bib
-Warning--I didn't find a database entry for "hyperspyUI"
-Warning--I didn't find a database entry for "hyperspy"
 Too many commas in name 1 of "A. Thompson, D. Attwood, E. Gullikson, et.al." for entry x-ray-booklet
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "A. Thompson, D. Attwood, E. Gullikson, et.al." for entry x-ray-booklet

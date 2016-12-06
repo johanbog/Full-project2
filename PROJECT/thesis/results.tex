@@ -8,7 +8,9 @@ The results will be introduced in the same order as the experiments were conduct
 
 \section{Dataset matching}
 
-\cref{fig:edxsped} shows the results of matching the largest EDX dataset with the SPED dataset. \cref{fig:edxspedorig} shows the first result, with the SPED dataset rotated by the manually estimated angle, and the EDX dataset scaled using the scale factor obtained from the metadata. In \cref{fig:edxspedrot}, the angle has been iteratively optimized, and therefore increased by 0.4\%. \cref{fig:edxspedboth1} shows the third result, where both the rotation angle and he scale factor has been optimized, and the EDX image has been filtered to include less of the melted region. This led to an increase in the angle of 2.8\% from the manually estimated one, while the scale factor was reduced by 7\%. Should processed images be shown as well?%\cref{fig:edxspedboth1} also shows the third result, but here with the processed images.
+\cref{fig:edxsped} shows the results of matching the largest EDX dataset with the SPED dataset. \cref{fig:edxspedorig} shows the first result, with the SPED dataset rotated by the manually estimated angle, and the EDX dataset scaled using the scale factor obtained from the metadata. In \cref{fig:edxspedrot}, the angle has been iteratively optimized, and therefore increased by 0.4\% (0.4 \deg). \cref{fig:edxspedboth1} shows the third result, where both the rotation angle and he scale factor has been optimized, and the EDX image has been filtered to include less of the melted region. This led to an increase in the angle of 2.8\% (2.6 \deg) from the manually estimated one, while the scale factor was reduced by 7\%. Should processed images be shown as well? %\cref{fig:edxspedboth1} also shows the third result, but here with the processed images.
+
+
 
 % As explained in \cref{sec:method/dataset matching}, these images have been processed to be made more similar. \cref{fig:edx-in-sped-edx} shows the EDX image and \cref{fig:edx-in-sped-rectangle} shows the SPED image with a rectangle indicating where the best fit of the EDX image was found. 
 
@@ -69,16 +71,17 @@ The results will be introduced in the same order as the experiments were conduct
 
 The results from locating the EDX datasets in the HAADF overview images are displayed in \cref{fig:nonheated-images-in-overview, fig:heated-images-in-overview} for the non-treated and the heat-treated samples, respectively. In the non-treated sample, the two datasets B and D were not correctly located in the overview image. The calculated location of dataset B was completely off, while the position of D was just slightly offset. The actual positions of these datasets were estimated by eye and marked in \cref{fig:nonheated-images-in-overview} as blue dotted rectangles. The rest of the datasets were located correctly, and their positions are shown as red rectangles. For the heat-treated sample, all the datasets that were included in the overview image were correctly located. However, the areas covered by two the datasets A and B were found to not be included in the overview image.
 
+
 \begin{figure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{"fig/nonheated-images-in-overview (correct)3"}
+		\includegraphics[width=\linewidth]{fig/nonheated-images-in-overview (correct)3}
 		\caption{}
 		\label{fig:nonheated-images-in-overview}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{"fig/nonheated-matching-values"}
+		\includegraphics[width=\linewidth]{fig/nonheated-matching-values}
 		\caption{}
 		\label{fig:nonheated-matching-values}
 	\end{subfigure}
@@ -105,38 +108,45 @@ In both figures, the red star is the value of the dataset used as reference, the
 
 \section{Determination of $\zeta$-values}
 
-The calculated $\zeta$-values for all the characteristic X-ray lines used to quantify the data are presented in \cref{tab:non-heated zeta-values}, along with which dataset was used to calculate them. 
+The calculated $\zeta$-values for all the characteristic X-ray lines used to quantify the data are presented in \cref{tab:non-heated zeta-values}, along with which dataset was used to calculate them. The calculated $\zeta$-values were compared to the corresponding $k$-values using \cref{compare_zeta_CL}, with Ga$_{K\alpha}$ as reference element. \cref{fig:zeta-k-comparison} shows the results, with the mean value and spread of the $\zeta$-factors indicated. The average $\zeta$-values have been used for all further calculations. 
 
-\begin{table}
-	\caption{...}
+\begin{table}[h!]
+	\caption{zeta values}
 	\begin{center}
 	\begin{tabular}{ccc}
 
 	Element (X-ray line) & Dataset & $\zeta$-value \\ 
 	\midrule
 	\hline
-	Ga (K$\alpha$)  & C* & 582\\
-	Ga (K$\alpha$)  & A  & 608\\
-	As (K$\alpha$)  & C* & 689\\
-	As (K$\alpha$)  & A  & 706\\
-	Ge (K$\alpha$)  & B  & 732\\
-	Ge (K$\alpha$)  & D  & 741\\
-	Ge (K$\alpha$)  & A  & 748\\
-	Ge (L$\alpha$)  & A  & 933\\
-	Ge (L$\alpha$)  & D  & 900\\
-	Ge (L$\alpha$)  & B  & 900\\
-	Pd (L$\alpha$)  & E  & 1248\\
-	Pd (L$\alpha$)  & A  & 1284\\
-	Pd (L$\alpha$)  & B  & 1318\\
+	Ga ($K_\alpha$)  & C* & 582\\
+	Ga ($K_\alpha$)  & A  & 608\\ \hline
+	As ($K_\alpha$)  & C* & 689\\
+	As ($K_\alpha$)  & A  & 706\\ \hline
+	Ge ($K_\alpha$)  & B  & 732\\
+	Ge ($K_\alpha$)  & D  & 741\\
+	Ge ($K_\alpha$)  & A  & 748\\ \hline
+	Ge ($L_\alpha$)  & A  & 933\\
+	Ge ($L_\alpha$)  & D  & 900\\
+	Ge ($L_\alpha$)  & B  & 900\\ \hline
+	Pd ($L_\alpha$)  & E  & 1248\\
+	Pd ($L_\alpha$)  & A  & 1284\\
+	Pd ($L_\alpha$)  & B  & 1318\\ \hline
 %	AuL & B  & 3450\\ 
 %	AuL & C  & 3473\\
-	Au (M$\alpha$) & B & 2397\\
-	Au (M$\alpha$) & C & 2387\\
+	Au ($M_\alpha$) & B & 2397\\
+	Au ($M_\alpha$) & C & 2387\\
 	\hline
 	\end{tabular}
 	\end{center}
 	\label{tab:non-heated zeta-values}
 \end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig/other/zeta-k-plot}
+	\caption{zeta - k - comparison}
+	\label{fig:zeta-k-comparison}
+\end{figure}
 
 \section{Quantification}
 
@@ -145,39 +155,11 @@ The choice of which characteristic peaks to use for different areas in the sampl
 
 \cref{fig:zeta_area1,fig:zeta_area2} shows the compositions of two areas (\cref{fig:zeta_area1_overview,fig:zeta_area2_overview} shows the locations of these areas) in the untreated sample, as calculated using the Cliff-Lorimer ratio method (CL method) and the $\zeta$-factor method with and without absorption correction. All the spectra have been averaged in the horizontal direction. The results are as expected. \cref{fig:zeta_area1_ga,fig:zeta_area1_as} shows that the nanowire consists of Ga and As in a 50/50 ratio, and \cref{fig:zeta_area1_ge,fig:zeta_area1_pd} shows that the next two layers are approximately 100\% Pd and Ge. In the second area, \cref{fig:zeta_area2_pd,fig:zeta_area2_ge,fig:zeta_area2_au} shows that the composition of elements are approximately 100\% Au in the top region, 100\% Pd in the middle and 100\% Ge in the lower region.
 
-All three techniques give fairly similar answers for Ga and As, while the differences between the CL- and $\zeta$-factor methods are significantly higher for Pd, Ge and Au. The inclusion of absorption correction does not give significantly different results for any of the elements, except for the Ge-region in the second area where the absorption correction appears to significantly amplify two peaks. \cref{fig:zeta_area1_all,fig:zeta_area2_all} shows the compositions of all the element as calculated using the $\zeta$-method with absorption correction. There is a clear transitioning length between each of the elements layers where the spectra shows characteristic peaks belonging to both elements. This length is shortest for the transition between GaAs and Pd, and longest between Pd and Ge.
+All three techniques give fairly similar answers for Ga and As, while the differences between the CL- and $\zeta$-factor methods are significantly higher for Pd, Ge and Au. The inclusion of absorption correction does not give very different results for any of the elements, except for the Ge-region in the second area where the absorption correction appears to significantly amplify two erroneous peaks.
+%\cref{fig:zeta_area1_all,fig:zeta_area2_all} shows the compositions of all the element as calculated using the $\zeta$-method with absorption correction. 
+There is a clear transitioning length between each of the elements layers where the spectra shows characteristic peaks belonging to both elements. This length is shortest for the transition between GaAs and Pd, and longest between Pd and Ge.
 
 \begin{figure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{fig/q/1_ga_nm}
-		\caption{}
-		\label{fig:zeta_area1_ga}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{fig/q/1_as_nm}
-		\caption{}
-		\label{fig:zeta_area1_as}
-	\end{subfigure}
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{fig/q/1_pd_nm}
-			\caption{}
-			\label{fig:zeta_area1_pd}
-		\end{subfigure}%
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{fig/q/1_ge_nm}
-			\caption{}
-			\label{fig:zeta_area1_ge}
-	\end{subfigure}
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=\linewidth]{fig/q/1_all_abscorr4}
-			\caption{}
-			\label{fig:zeta_area1_all}
-	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\newlength\imageheight
@@ -185,69 +167,119 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 		\caption{}
 		\label{fig:zeta_area1_overview}
 	\end{subfigure}
+	\begin{subfigure}{.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{fig/q/1_ga_nm}
+		\caption{}
+		\label{fig:zeta_area1_ga}
+	\end{subfigure}%
+\hfill
+	\begin{subfigure}{.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{fig/q/1_as_nm}
+		\caption{}
+		\label{fig:zeta_area1_as}
+	\end{subfigure}
+\hfill
+		\begin{subfigure}{.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{fig/q/1_pd_nm}
+			\caption{}
+			\label{fig:zeta_area1_pd}
+		\end{subfigure}%
+	\hfill
+		\begin{subfigure}{.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{fig/q/1_ge_nm}
+			\caption{}
+			\label{fig:zeta_area1_ge}
+	\end{subfigure}
+\hfill
+%		\begin{subfigure}{.5\textwidth}
+%			\centering
+%			\includegraphics[width=\linewidth]{fig/q/1_all_abscorr4}
+%			\caption{}
+%			\label{fig:zeta_area1_all}
+%	\end{subfigure}%
 	\caption{plots of....}
 	\label{fig:zeta_area1}
 \end{figure}
 
 \begin{figure}
 	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width=\linewidth]{fig/q/2_overview}
+		\caption{Overview}
+		\label{fig:zeta_area2_overview}
+	\end{subfigure}%
+\hfill
+	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{fig/q/2_Pd2}
 		\caption{Pd}
 		\label{fig:zeta_area2_pd}
-	\end{subfigure}%
+	\end{subfigure}
+\hfill
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{fig/q/2_Ge2}
 		\caption{Ge}
 		\label{fig:zeta_area2_ge}
-	\end{subfigure}
+	\end{subfigure}%
+\hfill
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{fig/q/2_Au2}
 		\caption{Au}
 		\label{fig:zeta_area2_au}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{fig/q/2_all_abscorr2}
-		\caption{All}
-		\label{fig:zeta_area2_all}
 	\end{subfigure}
+%	\begin{subfigure}{.5\textwidth}
+%		\centering
+%		\includegraphics[width=\linewidth]{fig/q/2_all_abscorr2}
+%		\caption{All}
+%		\label{fig:zeta_area2_all}
+%	\end{subfigure}
 		\centering
-	\begin{subfigure}{.5\textwidth}
-		\includegraphics[width=\linewidth]{fig/q/2_overview}
-		\caption{Overview}
-		\label{fig:zeta_area2_overview}
-	\end{subfigure}
 	\caption{plots of....}
 	\label{fig:zeta_area2}
 \end{figure}
 
+
 \begin{figure}
 	\centering
 	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[width=\linewidth]{fig/q/D_heatedGeKline/As_zetaAbs}
+		\includegraphics[width=\linewidth]{fig/q/D-E/D}
+		\caption{D}
+		\label{fig:D-overview}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=\linewidth]{fig/q/D-E-trim/D_heatedGeKlineHEATMAP/As_zeta}
 		\caption{As}
 		\label{fig:Das}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.5\linewidth}
-		\includegraphics[width=\linewidth]{fig/q/D_heatedGeKline/Ga_zetaAbs}
+	\begin{subfigure}{0.45\linewidth}
+		\includegraphics[width=\linewidth]{fig/q/D-E-trim/D_heatedGeKlineHEATMAP/Ga_zeta}
 		\caption{Ga}
 		\label{fig:Dga}
 	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heatedGeKline/Ge_zetaAbs}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/D_heatedGeKlineHEATMAP/Ge_zeta}
 		\caption{Ge}
 		\label{fig:Dge}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/D_heatedGeKline/Pd_zetaAbs}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/D_heatedGeKlineHEATMAP/Pd_zeta}
 		\caption{Pd}
 		\label{fig:Dpd}
+	\end{subfigure}
+\hfill
+		\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/D_heatedAUHEATMAP/Au_zeta}
+		\caption{Au}
+		\label{fig:Dau}
 	\end{subfigure}
 	\caption{plots of....}
 	\label{fig:D}
@@ -255,39 +287,50 @@ All three techniques give fairly similar answers for Ga and As, while the differ
 
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/As_zetaAbs}
+		\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E/E}
+		\caption{E}
+		\label{fig:E-overview}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/E_heatedGeKlineHEATMAP/As_zeta}
 		\caption{As}
 		\label{fig:Eas}
-	\end{subfigure}%
-	\hfill
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Ga_zetaAbs}
-		\caption{Ga}
-		\label{fig:Ega}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Ge_zetaAbs}
-		\caption{Ge}
-		\label{fig:Ege}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/E_heatedGeKlineHEATMAP/Ga_zeta}
+		\caption{Ga}
+		\label{fig:Ega}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.5\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/E_heatedGeKline/Pd_zetaAbs}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/E_heatedGeKlineHEATMAP/Ge_zeta}
+		\caption{Ge}
+		\label{fig:Ege}
+	\end{subfigure}
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/E_heatedGeKlineHEATMAP/Pd_zeta}
 		\caption{Pd}
 		\label{fig:Epd}
+	\end{subfigure}%
+\hfill
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{fig/q/D-E-trim/E_heatedAUHEATMAP/Au_zeta}
+		\caption{Au}
+		\label{fig:Eau}
 	\end{subfigure}
 	\caption{plots of....}
 	\label{fig:E}
 \end{figure}
 
-The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method with absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method without absorption correction). The areas D and E are located, as seen in \cref{fig:heated-images-in-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification was done with the assumption that the regions only contained Ga, As, Pd and/or Ge. The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outliers. An approximate quantification using the maps are 
+The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method without absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method with absorption correction). The areas D and E are located, as seen in \cref{fig:D-overview,fig:E-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification for \cref{fig:Das,fig:Dga,fig:Dge,fig:Dpd,fig:Eas,fig:Ega,fig:Ege,fig:Epd} was done with the assumption that the regions only contained Ga, As, Pd and/or Ge. The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outlier values. \cref{tab:D-composition,tab:E-composition} provides a summary of the compositions of area D and E, respectively, in which the areas have been roughly divided into three regions: The inner region denotes the nanowire on the right side of area D and left side of area E, while the lower and upper regions are the lower, darker regions and the upper, brighter regions within the squares in \cref{fig:D-overview,fig:E-overview}, respectively.
 
 %From \cref{fig:Das,fig:Dga,fig:Dge}, it is seen that the upper right region, which is the left edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-25\% being Ge and 0-5\% Pd. \cref{fig:Dge,fig:Dpd} shows that the lower left region consists of 40-50\% Ge, 40-50\% Pd, as well as about 5\% Ga and 5\% As. The upper left region consists of about 60-65\% Pd, 15-20\% Ge and about 10\% Ga and 10\% As. Likewise, \cref{fig:Eas,fig:Ega,fig:Ege} shows approximately the same composition on the left side (the right edge of the nanowire) as the right side in \cref{fig:D}. From looking at \cref{fig:Epd} as well, the upper right area consists of about 65-70\% Pd, 10-15\% Ge and about 10\% Ga and 10\% As, while the lower right consists of about 40-50\% Ge, 40-45\% Pd and 5\% Ga and 5\% As. These results are summarized in \cref{tab:D-E-composition}.
 
-\begin{table}
-	\caption{For area D}
+\begin{table}[h]
+	\caption{For area D (zeta)}
 	\begin{center}
 		\begin{tabular}{r|ccccc}			
 			Area & Ga & As & Ge & Pd & Au\\ 
@@ -302,15 +345,15 @@ The resulting compositions from areas D and E in the heat-treated sample, using 
 	\label{tab:D-composition}
 \end{table}
 
-\begin{table}
-	\caption{For area E}
+\begin{table}[h]
+	\caption{For area E (zeta)}
 	\begin{center}
 		\begin{tabular}{r|ccccc}			
 			Area & Ga & As &s Ge & Pd & Au\\ 
 			\midrule
 			\hline
 			Inner 1& 45-55 & 45-55 & 0-2 & 0-10 & -\\
-			Lower 1& 3-8 & 3-8 & 22-35 & 45-55 & 0\\
+			Lower 1& 3-8 & 3-8 & 22-35 & 45-55 & 0-2\\
 			Upper 1& 5-15 & 5-15 & 2-12 & 65-75 & 0-2\\
 			\hline
 		\end{tabular} 
@@ -319,24 +362,24 @@ The resulting compositions from areas D and E in the heat-treated sample, using 
 \end{table}
 
 
-\cref{fig:BCF-overview} shows three areas whose average compositions were calculated using all three techniques. As previously mentioned, it was not possible to calculate the composition of Au simultaneously with Ga and As, so two separate calculations were performed. \cref{fig:BCF1} shows the results for Ga, As, Pd and Ge, while \cref{fig:BCF2} includes Pd, Ge and Au. 
+\cref{fig:BCF-overview} shows three areas whose average compositions were calculated using all three techniques. As previously mentioned, it was not possible to calculate the composition of Au simultaneously with Ga and As, so two separate calculations were performed. \cref{fig:BCF1} shows the results for Ga, As, Pd and Ge, while \cref{fig:BCF2} includes only Pd, Ge and Au. The figures also shows the standard deviations of the calculated $\zeta$-values.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\begin{subfigure}{0.5\textwidth}
+	\begin{subfigure}{nonheated-images-in-overview (correct)3\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/B-C-F/BCF}
 		\caption{}
 		\label{fig:BCF-overview}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.7\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/B-C-F/AsGaGePd}
+		\includegraphics[width=\textwidth]{fig/q/B-C-F/AsGaGePd-GeKline-std}
 		\caption{}
 		\label{fig:BCF1}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.7\textwidth}
-		\includegraphics[width=\textwidth]{fig/q/B-C-F/AuGePd}
+		\includegraphics[width=\textwidth]{fig/q/B-C-F/AuGePd-std}
 		\caption{}
 		\label{fig:BCF2}
 	\end{subfigure}
@@ -344,6 +387,10 @@ The resulting compositions from areas D and E in the heat-treated sample, using 
 		\label{fig:}%
 		Caption}
 \end{figure}
+
+It is clear from \cref{fig:BCF1} that areas 1 and 2 contain no Ga or As, while area 3 contains about 5\% of each, and the three different methods give very similar results for these elements. For Ge and Pd, the $\zeta$-methods with and without absorption correction both give a composition of about 40-45 \% Ge and 55-60 \% Pd for areas 1 and 2, and 35-40\% Ge and 55-60 \% Pd for area 3. The CL-method results in approximately 5 pp more Ge and 5 pp less Pd in all areas, compared to the $\zeta$-methods. The differences between the $\zeta$-method with and without absorption correction are consistently only about 1-2 pp.
+
+\cref{fig:BCF2} gives slightly different results. It must here be noted that these results will be very inaccurate for area 3, which from \cref{fig:BCF1} contains Ga and As, which is not included in this quantification process. However, areas 1 and 2, which do not contain Ga or As, ought to give the same compositions for Ge and Pd as before. Both $\zeta$-methods now report little or no presence of Au in all areas, while the CL method gives a few percent. In areas 1 and 2, both the CL-method and the $\zeta$-method with absorption correction reports that the ratios of Ge to Pd have been offset by up to more than 10 pp, compared to \cref{fig:BCF1}. On the other hand, the $\zeta$-method without absorption gives approximately the same values for Ge and Pd; the Ge-to-Pd ratio has been skewed by a few percent at most. 
 
 %\begin{figure}
 %	\centering

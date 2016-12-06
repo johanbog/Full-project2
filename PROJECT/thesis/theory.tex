@@ -74,7 +74,7 @@ Here, $M$ is the atomic weight, $N_v$ is Avogadro's number, $Q$ is the ionizatio
 Another advantage of the $\zeta$-factor method is the inclusion of absorption correction. The absorption correction-term for a specific X-ray line is given as
 
 \begin{equation}
-A = \frac{(\nicefrac{\mu}{\rho})_{sp}\rho t \mathrm{cosec} \alpha}{1-\exp[-(\nicefrac{\mu}{\rho})_{sp}\rho t \mathrm{cosec} \alpha]},
+A = \frac{(\nicefrac{\mu}{\rho})_{sp} \rho t \mathrm{cosec} (\alpha)}{1-\exp[-(\nicefrac{\mu}{\rho})_{sp}\rho t \mathrm{cosec} (\alpha)]},
 \label{eq:Abs-corr}
 \end{equation}
 
@@ -94,10 +94,21 @@ As both the $\zeta$-factor and the $k$-factor in \cref{eq:zeta-eq, eq:CL-eq} are
 
 \begin{equation}
 \label{compare_zeta_CL}
-\frac{\zeta_A}{\zeta_B} \approx \frac{k_{AB}} = \frac{k_{AX}}{k_{BX}},
+\frac{\zeta_A}{\zeta_B} \approx k_{AB} = \frac{k_{AX}}{k_{BX}},
 \end{equation}
 
 where $X$ denotes the element which the $k$-values have been measured with respect to.
+
+	\subsection{Thickness estimation}
+	\label{sec:theory/thickness-est}
+The thickness of a sample can be estimated by using electron energy-loss spectroscopy (EELS), in which the energy which electrons lose due to inelastic scattering is measured. From Poisson statistics, the mean number of scattering events for each electron can be calculated from the EELS spectrum as 
+
+\begin{equation}
+\label{eq:logratio}
+\nicefrac{t}{\lambda}=\ln (\nicefrac{I_t}{I_0}),
+\end{equation}
+
+where $I_0$ and $I_t$ are the areas under the zero-loss peak and under the whole spectrum, respectively. If the mean free path $\lambda$ is known, the thickness $t$ can be estimated \cite{eels-bok,logratio-article}.
 
 \section{Electron diffraction}\label{ED}
 When electron diffraction is performed in a TEM, a beam of electrons is transmitted through the specimen. As the electrons pass through, some are scattered due to the atomic potentials in the specimen. By detecting the positions of the electrons after they have been transmitted through the specimen, a diffraction pattern is obtained. Analyzing this diffraction pattern can determine the characteristics of the specimen, for example whether it is crystalline or amorphous, if there are several phases present, and if crystalline, what its crystallographic characteristics are. This information can not be obtained through EDX.
@@ -228,7 +239,6 @@ There are several reasons why adding precession to electron diffraction gives be
 
 
 \section{Data analysis}
-	\subsection{(Introduction)}
 	\subsection{Template matching}
 	\label{sec:theory/template-matching}
 Template matching is used for finding the location in a reference image where a template image fits best. The function \textit{MatchTemplate} in the python library OpenCV does this by sliding the template image over the reference image, and recording how well it fits at each point. This matching value is given as the normed square difference between the two images for each pixel in the reference image:

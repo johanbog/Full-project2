@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{x-ray-booklet}
 E.~Gullikson~et.al. A.~Thompson, D.~Attwood.
@@ -8,6 +8,25 @@ E.~Gullikson~et.al. A.~Thompson, D.~Attwood.
 Thomas Aarholt.
 \newblock rotate.
 \newblock \url{https://github.com/thomasaarholt/hyperspy/tree/rotate}, 2016.
+
+\bibitem{hyperspy}
+Francisco de~la Peña, Tomas Ostasevicius, Vidar~Tonaas Fauske, Pierre Burdet,
+  Petras Jokubauskas, Mike Sarahan, Duncan Johnstone, Magnus Nord, Josh
+  Taillon, Jan Caron, Katherine~E. MacArthur, Alberto Eljarrat, Stefano
+  Mazzucco, Tom Furnival, Eric Prestat, Michael Walls, Gaël Donval, Ben
+  Martineau, Luiz~Fernando Zagonel, Andreas Garmannslund, Thomas Aarholt,
+  Christoph Gohlke, and iygr.
+\newblock hyperspy: Hyperspy 1.1.1, August 2016.
+
+\bibitem{eels-bok}
+R.F. Egerton.
+\newblock {\em Electron Energy-Loss Spectroscopy in the Electron Microscope}.
+\newblock Springer, 2011.
+
+\bibitem{hyperspyUI}
+Vidar~Tonaas Fauske.
+\newblock Hyperspyui 0.6.1.
+\newblock \url{http://hyperspy.org/hyperspyUI/}, 2016.
 
 \bibitem{cliff-lorimer}
 G.W.~Lorimer G.~Cliff.
@@ -20,25 +39,32 @@ Andreas Garmannslund.
 \newblock Refinement of the ζ-factor method for quantitative energy-dispersive
   x-ray spectroscopy in scanning transmission electron microscopy.
 \newblock Master's thesis, Norwegian University of Science and Technology,
-  2016.exit
+  2016.
 
 \bibitem{zeta-method}
 D.~B.~Williams M.~Watanabe.
 \newblock The quantitative analysis of thin specimens: a review of progress
   from the cliff-lorimer to the new $\zeta$-factor methods.
 \newblock {\em Journal of Microscopy}, 221:89--109, 2 2006.
-exi
+
 \bibitem{kate-binning}
 Kate MacArthur.
-\newblock linear\_rebin.
+\newblock linear\_binning.
 \newblock
-  \url{https://github.com/k8macarthur/hyperspy/tree/Non_Integer_Binning}, 2016.
+  \url{https://github.com/k8macarthur/hyperspy/tree/Non\_Integer\_Binning},
+  2016.
 
 \bibitem{sped-thesis}
 Christopher Su-Yan Own.
 \newblock {\em System Design and Verification of the Precession Electron
   Diffraction Technique}.
 \newblock PhD thesis, 2005.
+
+\bibitem{logratio-article}
+R.~F.~Egerton T.~Malis, S. C.~Cheng.
+\newblock Eels log ratio technique for specimen-thickness measurement in the
+  tem.
+\newblock {\em Journal of Electron Microscopy Technique}, 8(2):193--200, 1988.
 
 \bibitem{williams-carter}
 David~B Williams and C.~Barry Carter.
