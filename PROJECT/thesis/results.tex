@@ -8,30 +8,33 @@ The results will be introduced in the same order as the experiments were conduct
 
 \section{Dataset matching}
 
-\cref{fig:edxsped} shows the results of matching the largest EDX dataset with the SPED dataset. \cref{fig:edxspedorig} shows the first result, with the SPED dataset rotated by the manually estimated angle, and the EDX dataset scaled using the scale factor obtained from the metadata. In \cref{fig:edxspedrot}, the angle has been iteratively optimized, and therefore increased by 0.4\% (0.4 \deg). \cref{fig:edxspedboth1} shows the third result, where both the rotation angle and he scale factor has been optimized, and the EDX image has been filtered to include less of the melted region. This led to an increase in the angle of 2.8\% (2.6 \deg) from the manually estimated one, while the scale factor was reduced by 7\%. Should processed images be shown as well? %\cref{fig:edxspedboth1} also shows the third result, but here with the processed images.
-
-
-
+\cref{fig:edxsped} shows the results of matching the largest EDX dataset with the SPED dataset. \cref{fig:edxspedorig} shows the first result, with the SPED dataset rotated by the manually estimated angle, and the EDX dataset scaled using the scale factor obtained from the metadata. In \cref{fig:edxspedrot}, the angle has been iteratively optimized, and therefore increased by 0.4\% (0.4 $\deg$). \cref{fig:edxspedscale} shows the third result, where only the scale factor has been optimized. The lowest matching value was found if the scale factor was reduced by 6.5\%. The final attempt, in which both the rotation angle and the scale factor were iterated, resulted in the angle being increased by 2.8\% (2.6 $\deg$) which was clearly too much. Should processed images be shown as well? %\cref{fig:edxspedboth1} also shows the third result, but here with the processed images.
+In \cref{fig:edxspedorig,fig:edxspedrot} the results are very similar, and it appears from the nanowire that the EDX image is larger than the SPED image. In \cref{fig:edxspedscale}, on the other hand, the EDX image appears slightly smaller than the SPED image. 
 % As explained in \cref{sec:method/dataset matching}, these images have been processed to be made more similar. \cref{fig:edx-in-sped-edx} shows the EDX image and \cref{fig:edx-in-sped-rectangle} shows the SPED image with a rectangle indicating where the best fit of the EDX image was found. 
 
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.33\textwidth}
+	\begin{subfigure}{0.25\textwidth}
 		\includegraphics[width=\textwidth]{fig/other/edxinsped/orig5-2}
 		\caption{}
 		\label{fig:edxspedorig}
 	\end{subfigure}%
 	\hfill
-	\begin{subfigure}{0.33\textwidth}
+	\begin{subfigure}{0.25\textwidth}
 		\includegraphics[width=\textwidth]{fig/other/edxinsped/rot5-2}
 		\caption{}
 		\label{fig:edxspedrot}
 	\end{subfigure}%
-	\begin{subfigure}{0.33\textwidth}
-	\includegraphics[width=\textwidth]{fig/other/edxinsped/show/both1-2}
-	\caption{}
-	\label{fig:edxspedboth1}
-	\end{subfigure}
+	\begin{subfigure}{0.25\textwidth}
+		\includegraphics[width=\textwidth]{fig/other/edxinsped/show/onlyScale}
+		\caption{}
+		\label{fig:edxspedscale}
+	\end{subfigure}%
+%	\begin{subfigure}{0.25\textwidth}
+%	\includegraphics[width=\textwidth]{fig/other/edxinsped/show/both1-2}
+%	\caption{}
+%	\label{fig:edxspedboth1}
+%	\end{subfigure}
 %	\hfill
 %	\begin{subfigure}{0.25\textwidth}
 %		\includegraphics[width=\textwidth]{fig/other/edxinsped/show/both2-2}
@@ -75,7 +78,7 @@ The results from locating the EDX datasets in the HAADF overview images are disp
 \begin{figure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{fig/nonheated-images-in-overview (correct)3}
+		\includegraphics[width=\linewidth]{fig/nonheated-img-in-overview}
 		\caption{}
 		\label{fig:nonheated-images-in-overview}
 	\end{subfigure}%
@@ -85,6 +88,8 @@ The results from locating the EDX datasets in the HAADF overview images are disp
 		\caption{}
 		\label{fig:nonheated-matching-values}
 	\end{subfigure}
+	\caption{Nonheated edx in sped}
+	\label{fig:nonheated-overview}
 \end{figure}
 
 \begin{figure}
@@ -100,9 +105,11 @@ The results from locating the EDX datasets in the HAADF overview images are disp
 		\caption{}
 		\label{fig:heated-matching-values}
 	\end{subfigure}
+	\caption{Heated edx in sped}
+	\label{fig:heated-overview}
 \end{figure}
 
-The accuracy of the matching for the different datasets are shown in \cref{fig:nonheated-matching-values} for the non-heated sample, and in \cref{fig:heated-matching-values} for the heated values. The horizontal axis shows the different datasets while the vertical axis is the matching value in percent, where $\SI{100}{\percent}$ is defined to be the matching value of the dataset covering the biggest area in each respective sample. The matching of this dataset is assumed to be the most trustworthy due to there being fewer potential locations that resemble the actual location, as there are several distinct features. For the smaller datasets, or more accurately, the datasets with smaller survey images, there might be several different locations in the overview image that all give a fairly good match.
+The accuracy of the matching for the different datasets are shown in \cref{fig:nonheated-matching-values} for the non-heated sample, and in \cref{fig:heated-matching-values} for the heated values. The horizontal axis shows the different datasets while the vertical axis is the matching value in percent, where 100 \% is defined to be the matching value of the dataset covering the biggest area in each respective sample. The matching of this dataset is assumed to be the most trustworthy due to there being fewer potential locations that resemble the actual location, as there are several distinct features. For the smaller datasets, or more accurately, the datasets with smaller survey images, there might be several different locations in the overview image that all give a fairly good match.
 
 In both figures, the red star is the value of the dataset used as reference, the red circles are the correctly matched datasets while the blue squares are the datasets that resulted in a wrong location. The non-heated sample (\cref{fig:nonheated-matching-values}) shows high values for all the correctly located datasets, and significantly lower values for the wrongly located ones. In addition, it must be noted that the exact location of dataset F was impossible to verify visually due to the survey image not being large enough to distinguish specific features. In the heated sample (\cref{fig:heated-matching-values}), all the red correctly located datasets have high values while the datasets that were not present in the reference image have distinguishably lower values.
 
@@ -110,40 +117,66 @@ In both figures, the red star is the value of the dataset used as reference, the
 
 The calculated $\zeta$-values for all the characteristic X-ray lines used to quantify the data are presented in \cref{tab:non-heated zeta-values}, along with which dataset was used to calculate them. The calculated $\zeta$-values were compared to the corresponding $k$-values using \cref{compare_zeta_CL}, with Ga$_{K\alpha}$ as reference element. \cref{fig:zeta-k-comparison} shows the results, with the mean value and spread of the $\zeta$-factors indicated. The average $\zeta$-values have been used for all further calculations. 
 
+%\begin{table}[h!]
+%	\caption{zeta values}
+%	\begin{center}
+%	\begin{tabular}{ccccc}
+%
+%	Element & Dataset & $K_\alpha$ & $L_\alpha$ & $M_\alpha$ \\ 
+%	\midrule
+%	\hline
+%	Ga ($K_\alpha$)  & C* & 582\\
+%	Ga ($K_\alpha$)  & A  & 608\\ \hline
+%	As ($K_\alpha$)  & C* & 689\\
+%	As ($K_\alpha$)  & A  & 706\\ \hline
+%	Ge ($K_\alpha$)  & B  & 732\\
+%	Ge ($K_\alpha$)  & D  & 741\\
+%	Ge ($K_\alpha$)  & A  & 748\\ \hline
+%	Ge ($L_\alpha$)  & A  & 933\\
+%	Ge ($L_\alpha$)  & D  & 900\\
+%	Ge ($L_\alpha$)  & B  & 900\\ \hline
+%	Pd ($L_\alpha$)  & E  & 1248\\
+%	Pd ($L_\alpha$)  & A  & 1284\\
+%	Pd ($L_\alpha$)  & B  & 1318\\ \hline
+%%	AuL & B  & 3450\\ 
+%%	AuL & C  & 3473\\
+%	Au ($M_\alpha$) & B & 2397\\
+%	Au ($M_\alpha$) & C & 2387\\
+%	\hline
+%	\end{tabular}
+%	\end{center}
+%	\label{tab:non-heated zeta-values}
+%\end{table}
+
 \begin{table}[h!]
 	\caption{zeta values}
 	\begin{center}
-	\begin{tabular}{ccc}
-
-	Element (X-ray line) & Dataset & $\zeta$-value \\ 
-	\midrule
-	\hline
-	Ga ($K_\alpha$)  & C* & 582\\
-	Ga ($K_\alpha$)  & A  & 608\\ \hline
-	As ($K_\alpha$)  & C* & 689\\
-	As ($K_\alpha$)  & A  & 706\\ \hline
-	Ge ($K_\alpha$)  & B  & 732\\
-	Ge ($K_\alpha$)  & D  & 741\\
-	Ge ($K_\alpha$)  & A  & 748\\ \hline
-	Ge ($L_\alpha$)  & A  & 933\\
-	Ge ($L_\alpha$)  & D  & 900\\
-	Ge ($L_\alpha$)  & B  & 900\\ \hline
-	Pd ($L_\alpha$)  & E  & 1248\\
-	Pd ($L_\alpha$)  & A  & 1284\\
-	Pd ($L_\alpha$)  & B  & 1318\\ \hline
-%	AuL & B  & 3450\\ 
-%	AuL & C  & 3473\\
-	Au ($M_\alpha$) & B & 2397\\
-	Au ($M_\alpha$) & C & 2387\\
-	\hline
-	\end{tabular}
+		\begin{tabular}{ccccc}
+			Element & Dataset & $K_\alpha$ & $L_\alpha$ & $M_\alpha$ \\ 
+			\midrule
+			\hline
+			Ga  & C* & 486 & 512 & -\\
+			Ga  & A  & 608 & 826 & -\\ \hline
+			As  & C* & 576 & 600 & -\\
+			As  & A  & 706 & 955 & -\\ \hline
+			Ge  & B  & 729 & 898 & -\\
+			Ge  & D  & 740 & 901 & -\\
+			Ge  & A  & 745 & 933 & -\\ \hline
+			Pd  & E  & - & 1249 & -\\
+			Pd  & A  & - & 1284 & -\\
+			Pd  & B  & - & 1316 & -\\ \hline
+			Au  & B  & - & 3422 & 2396\\
+			Au  & C  & - & 3426 & 2387\\
+			\hline
+		\end{tabular}
 	\end{center}
 	\label{tab:non-heated zeta-values}
 \end{table}
 
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{fig/other/zeta-k-plot}
+	\includegraphics[width=0.7\linewidth]{fig/other/zeta-k-plot-new}
 	\caption{zeta - k - comparison}
 	\label{fig:zeta-k-comparison}
 \end{figure}
@@ -238,7 +271,6 @@ There is a clear transitioning length between each of the elements layers where 
 %		\caption{All}
 %		\label{fig:zeta_area2_all}
 %	\end{subfigure}
-		\centering
 	\caption{plots of....}
 	\label{fig:zeta_area2}
 \end{figure}
@@ -327,9 +359,11 @@ There is a clear transitioning length between each of the elements layers where 
 
 The resulting compositions from areas D and E in the heat-treated sample, using the $\zeta$-factor method without absorption correction, are shown in \cref{fig:D,fig:E} (++++ see Appendix X for equivalent maps from the CL-method and the $\zeta$-method with absorption correction). The areas D and E are located, as seen in \cref{fig:D-overview,fig:E-overview}, in the melted region on the left and right side of the nanowire, respectively. The quantification for \cref{fig:Das,fig:Dga,fig:Dge,fig:Dpd,fig:Eas,fig:Ega,fig:Ege,fig:Epd} was done with the assumption that the regions only contained Ga, As, Pd and/or Ge. The maps have been binned by a factor of two in the x- and y-directions, in order to reduce the effect of outlier values. \cref{tab:D-composition,tab:E-composition} provides a summary of the compositions of area D and E, respectively, in which the areas have been roughly divided into three regions: The inner region denotes the nanowire on the right side of area D and left side of area E, while the lower and upper regions are the lower, darker regions and the upper, brighter regions within the squares in \cref{fig:D-overview,fig:E-overview}, respectively.
 
+Write that the gold is probably not there.
+
 %From \cref{fig:Das,fig:Dga,fig:Dge}, it is seen that the upper right region, which is the left edge of the nanowire, consists of roughly 35-45\% Ga and 35-45\% As, with the remaining 10-25\% being Ge and 0-5\% Pd. \cref{fig:Dge,fig:Dpd} shows that the lower left region consists of 40-50\% Ge, 40-50\% Pd, as well as about 5\% Ga and 5\% As. The upper left region consists of about 60-65\% Pd, 15-20\% Ge and about 10\% Ga and 10\% As. Likewise, \cref{fig:Eas,fig:Ega,fig:Ege} shows approximately the same composition on the left side (the right edge of the nanowire) as the right side in \cref{fig:D}. From looking at \cref{fig:Epd} as well, the upper right area consists of about 65-70\% Pd, 10-15\% Ge and about 10\% Ga and 10\% As, while the lower right consists of about 40-50\% Ge, 40-45\% Pd and 5\% Ga and 5\% As. These results are summarized in \cref{tab:D-E-composition}.
 
-\begin{table}[h]
+\begin{table}
 	\caption{For area D (zeta)}
 	\begin{center}
 		\begin{tabular}{r|ccccc}			
@@ -345,7 +379,7 @@ The resulting compositions from areas D and E in the heat-treated sample, using 
 	\label{tab:D-composition}
 \end{table}
 
-\begin{table}[h]
+\begin{table}
 	\caption{For area E (zeta)}
 	\begin{center}
 		\begin{tabular}{r|ccccc}			
@@ -366,7 +400,7 @@ The resulting compositions from areas D and E in the heat-treated sample, using 
 
 \begin{figure}[h!]
 	\centering
-	\begin{subfigure}{nonheated-images-in-overview (correct)3\textwidth}
+	\begin{subfigure}{.7\textwidth}
 		\includegraphics[width=\textwidth]{fig/q/B-C-F/BCF}
 		\caption{}
 		\label{fig:BCF-overview}

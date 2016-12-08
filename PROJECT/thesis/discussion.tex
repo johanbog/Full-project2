@@ -6,9 +6,86 @@
 
 \section{Dataset matching}
 
+
 \begin{itemize}
-	\item EDX in SPED
+	\item How good is the matching in the three different cases. Rotation and scale. Try to quantify error.
+	\item How to improve matching
+	\item How much does rotation and rebinning of data change it
+	\item How good is the matching of the datasets
+	\item How to improve it
+	\item How to do the final step
+\end{itemize}
+
+\subsection{Step 1}
+
+It is difficult to quantitatively determine how good the matching of the EDX dataset in the SPED dataset is, and there are many factors that contribute to the inaccuracy of the matching. Because the rotation angle was only changed by 0.4\% when being iterated over, it appears that the rotation angle is not a big source of inaccuracy. A bigger potential problem is the apparent discrepancy in scaling the EDX and SPED datasets. This could be due to the scaling factors being wrong, but can also be purely because of the preprocessing steps before image matching was performed.
+
+As seen in \cref{fig:D,fig:E} (and even clearer in \cref{fig:zeta_area1,fig:zeta_area2} for the untreated sample), there is an overlapping region of approximately \SI{2}{\nano\meter} between layers of different composition. In this overlapping region, the EDX dataset will show Ga and As peaks, although not as high as in the nanowire, and this overlap region will therefore appear bright in the EDX image. In the SPED dataset there is also an overlapping region in which the diffraction spots from the nanowire gradually lose intensity, which was measured (using HyperSpyUI) to be approximately \SI{10}{\nano \meter}. This difference of lengths of the overlapping regions could cause the preprocessing steps to include slightly different regions of each datasets. As only these selected regions will appear bright in the images used for template matching, the sizes of the nanowires would be different, even though the scaling factor is correct.
+
+However, in \cref{fig:edxspedorig,fig:edxspedrot}, to the right of the nanowire there is a clear difference between the EDX and SPED regions. This might also be due to the differences in overlap regions, but it gives a strong indication that the scaling factor might not be correct.
+
+There are several possible improvements that could be made to the algorithm in order to improve these results. Firstly, a stronger filter could be placed on the images in order to not include any part of the overlap region from either dataset. Secondly, different elements in the sample, not just the GaAs in the nanowire, could be used to make the images more similar. For instance, if there are regions that have consistent diffraction patterns and compositions, these could be given a different color in the images. In this way, up to three different parts of the sample (one for each independent color) could be used to match the images together.
+
+Improvements could possibly also have been made to the experimental setup. The current matching was possible due to the nanowire being a recognizable feature in the sample; however, the diffuseness of the edges appears to decrease the accuracy. It is difficult to change this behavior of the edges, but introducing a new feature with sharper edges might reduce the number of error sources. In addition, the accuracy of the scaling factors ought to be investigated and, if necessary, corrected to give the right values.
+
+In the final product, the SPED dataset has been rotated and the EDX dataset re-binned. These procedures might also introduce new errors that the person analyzing the datasets must be aware of. The rotation algorithm, though it is still in a preliminary stage and might contain errors, does not change any of the information in the datasets and should therefore be regarded as safe. The re-binning algorithm, on the other hand, can change the EDX spectrum significantly, and especially if the dataset is re-binned by a factor much larger or much smaller than unity. This is especially important to keep in mind for the smaller datasets, that have a much higher resolution than the SPED dataset, and would therefore need to be down-sampled by a large factor,  resulting in a loss of information. If the purpose of the analysis is merely to qualitatively look at the composition and structure of a region in the sample, this information loss might be acceptable. However, for accurate quantitative results, one must be very careful to blindly trust the data.
+
+\subsubsection{Step 2}
+
+The matching of all the datasets in the HAADF overview image gave a good result for most of the datasets. The results have been verified by eye, and so there might be errors and inaccuracies that are not easily seen. For the purpose of knowing where in the sample the different datasets have been taken from, visual confirmation of the accuracy is good enough. However, if these locations are to be used to cut out portions of the SPED dataset in order to compare it to the EDX datasets, small discrepancies might lead to wrong conclusions about compositions and structures.
+
+The datasets that were not correctly located in the overview image, or were not part of it, gave matching values that were 20-60\% lower than the datasets assumed to be the best match. This distinction is very clear in the untreated image (see \cref{fig:nonheated-matching-values}), but dataset A in the heated image (see \cref{fig:heated-matching-values}) gave a rather high relative matching value, even though the dataset is not part of the image. This could easily lead to false conclusions about the location of the dataset, especially if it is not immediately clear from visual inspection that the algorithm's answer is wrong.
+
+This problem is believed to be improved by changing the way the ideal contrast level is determined. Instead of finding the overall best contrast level for all the datasets, this level can be determined for each dataset individually. This improvement is believed to simultaneously increase the accuracy of the actual matching and increase the accuracy in which datasets that are not included in the overview image are identified as such.
+
+Even though improving the algorithm is believed to give considerably better results, there are also changes that could and should be made to the data acquisition at the microscope. The algorithm was able to give accurate results for most of the datasets because the survey images were large enough to be uniquely identified in the overview image. However, the accuracy of the location of dataset F in the untreated sample was impossible to verify due to the survey image being too small and not containing enough distinct features. The TEM operator should therefore remember to always make sure the survey images are taken over large enough areas, or over areas which includes clear distinguishable features.
+
+\subsubsection{Step 3}
+
+The final step in the procedure would be to use the locations of these EDX datasets to find the equivalent positions in the SPED dataset. This was done successfully for only one of the datasets (dataset F) - the rest resulted in mismatching array dimensions between the rotated SPED dataset and the re-binned EDX dataset. This is believed to be due to the small size (low number of pixels) of the other datasets, as datasets C and F are much larger than the rest. As already discussed, the high resolution of these remaining datasets compared to the SPED dataset might lead one to conclude that this final step is unnecessary, especially if accurate quantitative results are required.
+
+\section{Determination of $\zeta$-values}
+
+When calculating the $\zeta$-factors, there are two main uncertainties: The thickness of the sample and the background subtraction. In his thesis, Garmannslund estimates a relative error in the thickness of 5.26\%. The errors due to the background subtraction are more difficult to quantify. Errors due to the background windows are believed to be lower for the peaks at higher energies due to the flatter background, as seen in \cref{fig:spectrum-with-info}. %The integration window width is believed to not have accounted
+
+Other uncertainties: Probe current, integration window, ...?
+
+The spread in $\zeta$-values between the different regions in the samples are not significant, and are well within the uncertainty of the thickness, except for Ga and As. The large deviance between the $\zeta$-values for these elements between the untreated and heat-treated samples can have been caused by several different factors. Shadowing, probe currents, sample thickness%Differences in shadowing due to the different tilt levels in each setup will have contributed, but is believed to not 
+
+The $zeta$-factors were compared to the $k$ in order to partially verify the values. As the $k$-factors are known to be less accurate than the calculated $zeta$-factors, the results in \cref{fig:zeta-k-comparison} are good for the lighter elements. However, the results for Pd and especially Au show very high differences between the two methods. It is again difficult to explain what the cause of this is. ???
+
+How to make them better:
+Verifying by thickness??
+
+The quantification of the untreated sample gave promising results for both regions, and the higher accuracy of the $\zeta$-method compared to the CL-method gives good 
+
+
+\begin{itemize}
+	\item Which lines were used
 	\begin{itemize}
-		\item How good is the matching in the three different 
+		\item Why lines were used is in method, but discuss why using those lines gives good results??
+		\item Discuss errors that can be there because of using certain lines
+		\item Discuss errors due to background subtraction
+		\item Discuss errors due to FWHM
+	\end{itemize}
+	\item How good are zeta values.
+	\begin{itemize}
+		\item Difference from different samples - why are they different?
+		\item Difference from k-values - why different?
+		\item How much can we trust them?
+		\item How to make them better next time?
+	\end{itemize}
+	\item How good is quantification of untreated sample
+	\begin{itemize}
+		\item Discuss differences between three methods
+		\item Discuss transition region, what that does, why it's there?
+		\item Discuss the accuracy of it, and if it's enough to validate the methods
+		
+	\end{itemize}
+	\item How good is the quantification of the heat-treated sample?
+	\begin{itemize}
+		\item Differences between methods
+		\item Accuracy
+		\item How well it coincides with theory
 	\end{itemize}
 \end{itemize}

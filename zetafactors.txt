@@ -1,0 +1,8 @@
+A_EDS Spectrum Image As_Ka 706.458581674
+A_EDS Spectrum Image Ga_Ka 607.860488895
+A_EDS Spectrum Image As_La 953.677975584
+A_EDS Spectrum Image Ga_La 824.833100937
+C_EDS Spectrum Image As_Ka 1256.70060616
+C_EDS Spectrum Image Ga_Ka 1061.59571044
+C_EDS Spectrum Image As_La 1301.71984724
+C_EDS Spectrum Image Ga_La 1112.95709852

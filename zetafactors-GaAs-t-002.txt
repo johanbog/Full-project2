@@ -1,0 +1,8 @@
+A ['As_Ka', 'Ga_Ka'] 1 1412.91716335
+A ['As_Ka', 'Ga_Ka'] 1 1215.72097779
+A ['As_La', 'Ga_La'] 2 1909.82708776
+A ['As_La', 'Ga_La'] 2 1651.43145113
+Cheat ['As_Ka', 'Ga_Ka'] 1 940.05163453
+Cheat ['As_Ka', 'Ga_Ka'] 1 794.107027498
+Cheat ['As_La', 'Ga_La'] 2 979.909450793
+Cheat ['As_La', 'Ga_La'] 2 836.83842426
