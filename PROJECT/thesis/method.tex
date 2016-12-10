@@ -53,6 +53,7 @@ Lastly, the positions of the remaining datasets had to be found in the SPED data
 
 \begin{table}[h]
 	\caption{All emission lines (from data booklet) in keV}
+	\label{tab:emission-lines}
 	\begin{center}
 		\begin{tabular}{rcccc}
 			Z & Element & $K_{\alpha1}$ & $L_{\alpha1}$ & $M_{\alpha1}$ \\ \midrule
@@ -70,3 +71,7 @@ The first step in the quantitative analysis was to determine the $\zeta$-factors
 The thickness of the sample was estimated using the log-ratio method, given in \cref{eq:logratio}. From an EELS map of the unheated sample, the average number of scattering events was found for the middle part of the nanowire. For the mean free path for GaAs, $\lambda=104$ was used \cite{andreas}.
 
 The quantification of the samples was performed using three different methods: The Cliff-Lorimer ratio technique, for which the necessary $k$-factors were obtained from the TEM software; the $\zeta$-factor method; and the $\zeta$-factor method with background subtraction. HyperSpy was used for the first two of these methods, but absorption correction is at the time not been included in the software. The necessary code for this was also acquired from Garmannslund's thesis. All three techniques were used in order to enable the results to be compared against each other. In an attempt to verify the techniques, they were first used on the untreated sample whose composition is assumed to be known. They were then used on the heated sample in order to determine the composition at locations of interest.
+
+The choice of which characteristic peaks were used for the quantifications of different areas in the sample needs to be addressed. First of all, as seen in \cref{fig:spectrum-all-peaks}, there are large overlaps between several of the characteristic peaks of the elements in the sample. Because of the overlap between the $Ge_{K\alpha}$ and the $Au_{M\alpha}$, these two peaks could not be used simultaneously during the quantification process. Further, however, there is also a large overlap between the $L_\alpha$-peaks of Ga, Ge and As, making it difficult to accurately measure the compositions of these four elements simultaneously, because, as \cref{tab:emission-lines} shows, there are no more peaks within the energy range used in the TEM that give many enough counts to be used for quantification.
+
+For this reason, for the regions in the heated sample, two separate quantification processes were performed: First with the $K_\alpha$-peaks of Ga, Ge and As, and the $L_\alpha$-peak for Pd, and second with the $L_\alpha$-peaks of Ga, Ge, As and Pd, and the $M_\alpha$ for Au. This second quantification must now be understood to not give accurate results if all three elements Ga, Ge and As are present in the analyzed region.

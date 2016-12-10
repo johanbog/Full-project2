@@ -52,40 +52,34 @@ Other uncertainties: Probe current, integration window, ...?
 
 The spread in $\zeta$-values between the different regions in the samples are not significant, and are well within the uncertainty of the thickness, except for Ga and As. The large deviance between the $\zeta$-values for these elements between the untreated and heat-treated samples can have been caused by several different factors. Shadowing, probe currents, sample thickness%Differences in shadowing due to the different tilt levels in each setup will have contributed, but is believed to not 
 
-The $zeta$-factors were compared to the $k$ in order to partially verify the values. As the $k$-factors are known to be less accurate than the calculated $zeta$-factors, the results in \cref{fig:zeta-k-comparison} are good for the lighter elements. However, the results for Pd and especially Au show very high differences between the two methods. It is again difficult to explain what the cause of this is. ???
+The $\zeta$-factors were compared to the $k$ in order to partially verify the values. As the $k$-factors are known to be less accurate than the calculated $\zeta$-factors, the results in \cref{fig:zeta-k-comparison} are good for the lighter elements. However, the results for Pd and especially Au show very high differences between the two methods. It is again difficult to explain what the cause of this is. ???
 
 How to make them better:
 Verifying by thickness??
 
-The quantification of the untreated sample gave promising results for both regions, and the higher accuracy of the $\zeta$-method compared to the CL-method gives good 
+\section{Quantification}
 
+The quantification of the untreated sample gave good results in both regions. The inclusion of absorption correction gave only very minor differences in compositions, but that is to be expected when the compositions are this well-defined. The fact that the $\zeta$-method gave results that matched the known compositions better than the CL-method did is an indication of the validity of this method, but not a validation. Furthermore, both methods produced clearly wrong peaks, ...
+%When the results are visualized as in \ref{fig:zeta_area1,fig:zeta_area2} they are clearly identifiable as outliers, but if only the mean value is considered
 
-\begin{itemize}
-	\item Which lines were used
-	\begin{itemize}
-		\item Why lines were used is in method, but discuss why using those lines gives good results??
-		\item Discuss errors that can be there because of using certain lines
-		\item Discuss errors due to background subtraction
-		\item Discuss errors due to FWHM
-	\end{itemize}
-	\item How good are zeta values.
-	\begin{itemize}
-		\item Difference from different samples - why are they different?
-		\item Difference from k-values - why different?
-		\item How much can we trust them?
-		\item How to make them better next time?
-	\end{itemize}
-	\item How good is quantification of untreated sample
-	\begin{itemize}
-		\item Discuss differences between three methods
-		\item Discuss transition region, what that does, why it's there?
-		\item Discuss the accuracy of it, and if it's enough to validate the methods
-		
-	\end{itemize}
-	\item How good is the quantification of the heat-treated sample?
-	\begin{itemize}
-		\item Differences between methods
-		\item Accuracy
-		\item How well it coincides with theory
-	\end{itemize}
-\end{itemize}
+%When analyzing the results from the heat-treated sample, it is important to keep in mind the results from the untreated sample and not just blindly trust the presented data. In particular, the overlap regions visible in \cref{fig:zeta_area1,fig:zeta_area2} must be 
+
+The quantification of the heat-treated sample has not given as clear results as one might have hoped, and it is important to keep in mind the quantification process and not just blindly trust the presented data. For instance, the transition regions between the three layers in areas D and E are calculated to contain up to 10\% Au even though none of the three layers shows more than 2\% Au. The small presence of Au in the results is likely to occur due to spurious X-rays that are scattered to high angles and then produce characteristic X-rays from Au-atoms at other locations in the sample. This hypothesis is strengthened by looking at the EDX spectrum from the nanowire in the heat-treated sample, in which there is a small $Au_M\alpha$-peak (as well as a small $Pd_L\alpha$-peak). However, there is no peak of significant height to be seen for the $Au_L\alpha$-line, which lies at a much higher energy than the $Au_M\alpha$-line. +++
+
+Why the quantification shows more Au in the transition regions than in the main layers is unknown (++discuss this), but the conclusion is nevertheless that there is likely very little or no Au in either of the layers. The accuracy of this conclusion is likely to have been verified by using the $Au_{L\alpha}$-line instead, as the higher energy makes it less likely to give counts because of spurious X-rays, but the high overlap with $Ge_{K\alpha}$ makes this difficult to do in practice.
+
+If one is to conclude that there is no Au in areas D and E, the reported amount of Pd must also be adjusted. As mentioned, the nanowire showed a small $Pd_{L\alpha}$-peak as well, at an energy close to that of $Au_{M\alpha}$, likely also a product of spurious X-rays. This will have increased the reported amount of Pd also in the Pd-rich regions, and skewed the ratios in favor of Pd. In order to estimate how much higher the reported amounts of Pd are compared to the actual amounts, one can look at the amount of Pd detected in the nanowire, that is, the inner regions of areas D and E. If the nanowire is assumed to consist of only Ga and As (or verified to do so from the diffraction patterns), there should be no Pd detected. As presented in \cref{tab:D-composition,tab:E-composition}, the $\zeta$-method gave 0-7\% and 0-10\% Pd in the nanowire in areas D and E, respectively. Subtracting an amount of up to these values from the Pd-composition and attributing it to the other elements might therefore give a more accurate idea of the actual composition of the material. However, the nanowire also shows a composition of 0-5 and 0-7 \% Ge in areas D and E, which was assumed to not be due to spurious X-rays because of the higher energy of the $\mathrm{Ge_{K\alpha}}$-peak. If this result is due to spurious X-rays as well, the subtraction of Pd must be reduced accordingly, and the composition will therefore not change much. 
+
+\cref{tab:D-composition,tab:E-composition} gives three different results for the Pd-composition in these areas, and it is not obvious which is to be trusted to be the most correct. As discussed above, the compositions denoted $\mathrm{Pd}_1$ are likely to be too high due to spurious X-rays. The Pd$_2$-compositions calculated without $\zeta$-absorption give results corresponding fairly well to a subtraction of 7-10\% pp Pd. However, it must be noted that if one assumes no Au in either regions, the up to 10\% reported Au must be allocated to the other elements, making the $\mathrm{Pd}_2$-composition slightly higher than the results in the tables, both with and without absorption correction. These results give no answer to whether the absorption correction gives more accurate results for these areas, nor to which peaks ought to be used when 
+
+The areas 1,2 and 3 in \cref{fig:BCF} showed similar results as for areas D and E, and should therefore be analyzed in the same way. In \cref{fig:BCF1}, one may therefore assume that the Ge:Pd-ratio in areas 1 and 2 ought to be skewed from about 43:57 (for the $zeta$-method) to about 50:50, and likewise in area 3, except that also the Ga- and As-compositions should increase. This hypothesis is strengthened by looking at \cref{fig:BCF2} for areas and 1 and 2, which contain no Ga or As, as \cref{fig:BCF1} shows. For these regions, the results therefore ought to be accurate also for Ge, despite the overlap between peaks. It is now interesting to note the big differences caused by the inclusion of absorption correction to the $\zeta$-method. Without absorption correction, the results are very similar as the ones in \cref{fig:BCF1}, but absorption correction gives results that match very well the hypothesis of spurious X-rays giving a higher Pd-composition. If this hypothesis can be proven to be correct through analysis of the diffraction patterns, it gives a strong reason for why absorption correction can be necessary to get accurate results.
+
+\section{Comparison to theory}
+
+From the literature, \cite{nanowire-theory} (++++ this part should reference introduction instead) there are some candidate compositions that one would expect to see also for this sample. Figure \cref{fig:...} shows the expected compositions in different layers (++++ experiment conditions). From this, one might expect to find PdGe in areas 1 and 2 in \cref{fig:D,fig:E}, GaAs with diffused Ge in the inner regions of areas D and E (\cref{fig:DE}), and perhaps the expected intermediate phase Pd$_4$GaAs in other areas.
+
+In areas 1 and 2, the $\zeta$-method with absorption correction when using the Ge$_{L\alpha}$-peak corresponds very well to the theory, and as discussed, a similar result as when using the Ge$_{K\alpha}$-peak if the reported Ge:Pd-ratio is skewed as a result of spurious X-rays. This hypothesis is further strengthened if the inner region of the nanowire does consist of GaAs with diffused Ge, as this result would indicate that the reported presence of Ge is not just a result of spurious X-rays, in turn validating the skewing of the Ge:Pd-ratio.
+
+For the lower and upper regions in areas D and E, the results are not as easily interpreted because the results from using the Ge$_{L\alpha}$-line can not be trusted. The lower regions appear to consist of Ge and Pd in a ratio Pd:Ge between 3:2 and 5:3, along with traces of Ga and As in a ratio between and 1:20 and 1:5 to Pd. However, if analysis of the diffraction patterns from areas 1 and 2 reports the phase to be GePd, the same logic as above ought to be used here as well, and the Pd:Ge ratio should be skewed to between 1:1 and 5:4, depending on how much of the reported Pd and Au is attributed to each of the other elements. This would also mean that the ratios of Ga and As to Pd should increase slightly.
+%However, if the results from area 1 and 2 indicate that absorption correction gives more accurate results, the Ge:Pd-ratio might be skewed to 3:2 or even 2:1, by using the parenthesized values for Pd$_2$ in \cref{tab:D-composition,tab:E-composition}, and therefore increasing the compositions of the other elements.
+In the upper regions the composition is Pd:Ga:As:Ge in a ratio Pd:GaAs:Ge:Au approximately between 22:4:2:1 and 12:4:2:1. Again, skewing the ratio and attributing the Au-composition to the other elements will make the expected intermediate phase Pd$_4$GaAs a possibility, except for the presence of Ge. 

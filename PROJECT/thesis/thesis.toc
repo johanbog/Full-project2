@@ -2,43 +2,45 @@
 \contentsline {section}{Acknowledgment}{ii}{section*.1}
 \contentsline {section}{Summary and Conclusions}{iii}{section*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}Theory}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Electron Microscopy}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Electron-sample interaction}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Transmission Electron Microscopy (TEM)}{4}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Scanning Transmission Electron Microscopy (STEM)}{4}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}X-ray spectroscopy}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Energy-Dispersive X-Ray Spectroscopy (EDS)}{5}{subsection.2.2.1}
-\contentsline {subsubsection}{X-ray emission}{5}{section*.5}
-\contentsline {subsubsection}{X-ray detection}{6}{section*.6}
-\contentsline {subsubsection}{EDS spectrum}{6}{section*.7}
-\contentsline {subsection}{\numberline {2.2.2}Quantitative X-ray Analysis}{6}{subsection.2.2.2}
-\contentsline {subsubsection}{The Cliff-Lorimer ratio technique}{7}{section*.9}
-\contentsline {subsubsection}{The $\zeta $-factor method}{8}{section*.10}
-\contentsline {subsection}{\numberline {2.2.3}Thickness estimation}{9}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Electron diffraction}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Diffraction theory}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Electron diffraction in STEM}{12}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Scanning Precession Electron Diffraction (SPED)}{12}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Data analysis}{14}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Template matching}{14}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Re-binning and rotating multidimensional data}{14}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Experimental}{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}Equipment}{17}{section.3.1}
-\contentsline {section}{\numberline {3.2}Material}{17}{section.3.2}
-\contentsline {section}{\numberline {3.3}Dataset matching}{17}{section.3.3}
-\contentsline {section}{\numberline {3.4}Quantitative analysis}{19}{section.3.4}
-\contentsline {chapter}{\numberline {4}Results}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dataset matching}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}Quantification}{26}{section.4.3}
-\contentsline {chapter}{\numberline {5}Discussion}{34}{chapter.5}
-\contentsline {section}{\numberline {5.1}Dataset matching}{34}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Step 1}{34}{subsection.5.1.1}
-\contentsline {subsubsection}{Step 2}{36}{section*.29}
-\contentsline {subsubsection}{Step 3}{37}{section*.30}
-\contentsline {section}{\numberline {5.2}Determination of $\zeta $-values}{37}{section.5.2}
-\contentsline {chapter}{\numberline {A}Acronyms}{39}{appendix.A}
-\contentsline {chapter}{\numberline {B}Additional Information}{40}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{40}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{40}{subsection.B.1.1}
+\contentsline {chapter}{\numberline {2}Theory}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Electron Microscopy}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Electron-sample interaction}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Transmission Electron Microscopy (TEM)}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Scanning Transmission Electron Microscopy (STEM)}{5}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}X-ray spectroscopy}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Energy-Dispersive X-Ray Spectroscopy (EDS)}{6}{subsection.2.2.1}
+\contentsline {subsubsection}{X-ray emission}{6}{section*.5}
+\contentsline {subsubsection}{X-ray detection}{7}{section*.6}
+\contentsline {subsubsection}{EDS spectrum}{7}{section*.7}
+\contentsline {subsection}{\numberline {2.2.2}Quantitative X-ray Analysis}{7}{subsection.2.2.2}
+\contentsline {subsubsection}{The Cliff-Lorimer ratio technique}{8}{section*.9}
+\contentsline {subsubsection}{The $\zeta $-factor method}{9}{section*.10}
+\contentsline {subsection}{\numberline {2.2.3}Thickness estimation}{10}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Electron diffraction}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Diffraction theory}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Electron diffraction in STEM}{13}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Scanning Precession Electron Diffraction (SPED)}{13}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Data analysis}{15}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Template matching}{15}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Re-binning and rotating multidimensional data}{15}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Experimental}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Equipment}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Material}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dataset matching}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Quantitative analysis}{20}{section.3.4}
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dataset matching}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Determination of $\zeta $-values}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Quantification}{27}{section.4.3}
+\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Dataset matching}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Step 1}{35}{subsection.5.1.1}
+\contentsline {subsubsection}{Step 2}{37}{section*.29}
+\contentsline {subsubsection}{Step 3}{38}{section*.30}
+\contentsline {section}{\numberline {5.2}Determination of $\zeta $-values}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Quantification}{39}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comparison to theory}{41}{section.5.4}
+\contentsline {chapter}{\numberline {A}Acronyms}{44}{appendix.A}
+\contentsline {chapter}{\numberline {B}Additional Information}{45}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{45}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{45}{subsection.B.1.1}

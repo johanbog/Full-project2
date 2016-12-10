@@ -3,3 +3,15 @@
 % !TEX spellcheck = en-US
 %%=========================================
 \chapter{Introduction}
+
+Since their discovery in the late 1990's, semiconductor nanowires have been researched extensively as a potential new building block in the fields of electronics, opto-electronics, energy generation and storage. Devices such as batteries and solar cells are examples of devices in which semiconductor nanowires could make a great difference in peoples' everyday lives \cite{WeiLu}. However, a deeper understanding of the nanoscale physics involved is required for this to become a reality \cite{nanowire-paper}. 
+
+In research it is important to be able to measure the electrical properties of the nanowire. To do so, an electrical contact has to be attached to the wire. Unfortunately, the interface between the contact and the nanowire forms a Schottky barrier. If the resistance of the nanowire is measured, the high resistance in the barrier will dominate and accurate measurements of the resistance in the nanowire are impossible \cite{Julie-pres}. The interface should ideally act as an ohmic conductor.
+
+Many attempts were made in the 1980's and 90's to stack metals onto thin-films in order to produce ohmic contacts \cite{Baca}, and the results found then are now investigated for use on nanowires. For GaAs-films, one of the best solutions involved depositing layers of Pd, Ge and Au, and then annealing it \cite{nanowire-paper}. This has been done, but did not result in an ohmic contact, although the annealing has significantly improved the properties. To explain why, it is necessary to investigate the resulting phases in the nanowire-metal interface \cite{Julie-pres}.
+
+A transmission electron microscope can be used to study the structure and composition of a material through many different techniques. Two of these techniques are energy-dispersive X-ray spectroscopy and selected area diffraction. Spectroscopy can help determine the composition of the material, while diffraction is necessary for structural information. If used together, these two techniques can therefore provide complete information about the material. The purpose of this project has been two-folded. Due to having been collected at different microscopes, the diffraction data and the spectroscopy data is not aligned with each other. In order to study both signals simultaneously, the datasets have been scaled, rotated and translated in an attempt to match them pixel by pixel. The second part of the project has consisted of using the open-source Python library HyperSpy \cite{hyperspy} to quantify the element compositions in select regions of interest on the annealed nanowire.
+
+%\cite{http://www.nature.com/nature/journal/v430/n6995/pdf/nature02674.pdf}
+
+%If the nanowires are to be integrated into devices, a first required step is to attach electric contacts to the wire \cite{http://www.nature.com/nature/journal/v430/n6995/pdf/nature02674.pdf}. The interface between the nanowire and the contact forms a Schottky barrier, which can severely increase the resistance and therefore 
