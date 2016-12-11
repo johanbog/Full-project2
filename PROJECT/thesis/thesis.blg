@@ -10,13 +10,11 @@ A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: discussion.aux
 A level-1 auxiliary file: acronyms.aux
 A level-1 auxiliary file: appendix-b.aux
-The style file: plain.bst
+The style file: unsrt.bst
 Database file #1: refs.bib
-I was expecting a `,' or a `}'---line 111 of file refs.bib
- : 
- : note = {SCANDEM 2016}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Julie-pres"
+Warning--I didn't find a database entry for "http://cml.harvard.edu/assets/MRSBull36-1052_Lieber.pdf"
+Warning--I didn't find a database entry for "https://cml.harvard.edu/assets/JPhysD_39_R387.pdf"
+Warning--empty booktitle in Lieber
 Warning--empty journal in cliff-lorimer
-Warning--empty note in Julie-pres
-(There was 1 error message)
+(There were 5 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.1)  10 DEC 2016 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.1)  11 DEC 2016 16:15
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -862,194 +862,113 @@ l.47 \include{intro}
  (intro.tex
 Chapter 1.
 
-LaTeX Warning: Citation `WeiLu' on page 2 undefined on input line 7.
+LaTeX Warning: Citation `Julie-pres' on page 2 undefined on input line 10.
 
 
-LaTeX Warning: Citation `nanowire-paper' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Julie-pres' on page 2 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Baca' on page 2 undefined on input line 11.
-
-
-LaTeX Warning: Citation `nanowire-paper' on page 2 undefined on input line 11.
-
-
-LaTeX Warning: Reference `schottky-barrier-figure' on page 1 undefined on input
- line 11.
-
-
-LaTeX Warning: Citation `Julie-pres' on page 2 undefined on input line 11.
+LaTeX Warning: Citation `Julie-pres' on page 2 undefined on input line 12.
 
 [2
 
 
-]
-
-LaTeX Warning: Citation `hyperspy' on page 3 undefined on input line 15.
-
-) [3]
+]) [3]
 \openout2 = `theory.aux'.
 
  (theory.tex
 Chapter 2.
 
-LaTeX Warning: Citation `williams-carter' on page 4 undefined on input line 7.
+LaTeX Warning: Citation `http://cml.harvard.edu/assets/MRSBull36-1052_Lieber.pd
+f' on page 4 undefined on input line 4.
+
+<fig/nanowire-growth.png, id=259, 193.32225pt x 106.59825pt>
+File: fig/nanowire-growth.png Graphic file (type png)
+
+<use fig/nanowire-growth.png>
+Package pdftex.def Info: fig/nanowire-growth.png used on input line 8.
+(pdftex.def)             Requested size: 272.99881pt x 150.53775pt.
+ [4
 
 
-LaTeX Warning: Reference `STEM' on page 4 undefined on input line 10.
 
-
-LaTeX Warning: Citation `williams-carter' on page 4 undefined on input line 10.
-
-
-[4
-
-
-
-]
-Overfull \hbox (19.80544pt too wide) in paragraph at lines 12--12
-[]\T1/cmr/bx/n/14.4 Scanning Trans-mis-sion Elec-tron Mi-croscopy (STEM) 
- []
-
-[5] [6]
-
-LaTeX Warning: Citation `x-ray-booklet' on page 7 undefined on input line 30.
-
-<fig/edx-example-spectrum.png, id=258, 578.16pt x 433.62pt>
+] [5 <./fig/nanowire-growth.png>] [6] [7]
+<fig/edx-example-spectrum.png, id=293, 578.16pt x 433.62pt>
 File: fig/edx-example-spectrum.png Graphic file (type png)
 
 <use fig/edx-example-spectrum.png>
-Package pdftex.def Info: fig/edx-example-spectrum.png used on input line 34.
+Package pdftex.def Info: fig/edx-example-spectrum.png used on input line 55.
 (pdftex.def)             Requested size: 272.99881pt x 204.74759pt.
- [7]
+ [8] [9 <./fig/edx-example-spectrum.png>]
 
-LaTeX Warning: Citation `cliff-lorimer' on page 8 undefined on input line 45.
-
-
-LaTeX Warning: Citation `williams-carter' on page 8 undefined on input line 51.
-
-
-[8 <./fig/edx-example-spectrum.png>]
-
-LaTeX Warning: Citation `zeta-method' on page 9 undefined on input line 70.
-
-
-LaTeX Warning: Reference `zeta-eq' on page 9 undefined on input line 70.
-
-[9]
-
-LaTeX Warning: Citation `zeta-method' on page 10 undefined on input line 89.
-
-
-LaTeX Warning: Reference ` eq:CL-eq' on page 1 undefined on input line 91.
-
-
-LaTeX Warning: Citation `eels-bok' on page 10 undefined on input line 109.
-
-
-LaTeX Warning: Citation `logratio-article' on page 10 undefined on input line 1
-09.
+LaTeX Warning: Reference `zeta-eq' on page 10 undefined on input line 91.
 
 [10]
 
-LaTeX Warning: Reference `' on page 1 undefined on input line 121.
+LaTeX Warning: Reference ` eq:CL-eq' on page 1 undefined on input line 112.
 
-[11] <fig/other/ewald-sphere.png, id=308, 171.64125pt x 122.859pt>
+[11]
+
+LaTeX Warning: Reference `' on page 1 undefined on input line 142.
+
+[12] <fig/other/ewald-sphere.png, id=353, 171.64125pt x 122.859pt>
 File: fig/other/ewald-sphere.png Graphic file (type png)
 
 <use fig/other/ewald-sphere.png>
-Package pdftex.def Info: fig/other/ewald-sphere.png used on input line 160.
+Package pdftex.def Info: fig/other/ewald-sphere.png used on input line 181.
 (pdftex.def)             Requested size: 272.99881pt x 195.42732pt.
- [12]
-<fig/other/SPED-apparatus.png, id=319, 268.6035pt x 286.671pt>
+ [13]
+<fig/other/SPED-apparatus.png, id=364, 268.6035pt x 286.671pt>
 File: fig/other/SPED-apparatus.png Graphic file (type png)
 
 <use fig/other/SPED-apparatus.png>
-Package pdftex.def Info: fig/other/SPED-apparatus.png used on input line 211.
+Package pdftex.def Info: fig/other/SPED-apparatus.png used on input line 232.
 (pdftex.def)             Requested size: 272.99881pt x 291.36821pt.
 
-
-LaTeX Warning: Citation `sped-thesis' on page 13 undefined on input line 212.
-
-
-LaTeX Warning: Citation `sped-thesis' on page 13 undefined on input line 212.
-
-<fig/other/dyndiff1.png, id=321, 248.127pt x 243.309pt>
+<fig/other/dyndiff1.png, id=368, 248.127pt x 243.309pt>
 File: fig/other/dyndiff1.png Graphic file (type png)
 
 <use fig/other/dyndiff1.png>
-Package pdftex.def Info: fig/other/dyndiff1.png used on input line 221.
+Package pdftex.def Info: fig/other/dyndiff1.png used on input line 242.
 (pdftex.def)             Requested size: 175.49881pt x 172.08975pt.
 
-<fig/other/dyndiff2.png, id=322, 261.3765pt x 247.52475pt>
+<fig/other/dyndiff2.png, id=369, 261.3765pt x 247.52475pt>
 File: fig/other/dyndiff2.png Graphic file (type png)
 
 <use fig/other/dyndiff2.png>
-Package pdftex.def Info: fig/other/dyndiff2.png used on input line 227.
+Package pdftex.def Info: fig/other/dyndiff2.png used on input line 248.
 (pdftex.def)             Requested size: 175.49881pt x 166.19574pt.
-
-
-LaTeX Warning: Citation `williams-carter' on page 13 undefined on input line 23
-3.
-
-
-LaTeX Warning: Citation `williams-carter' on page 13 undefined on input line 23
-3.
-
-
-LaTeX Warning: Citation `williams-carter' on page 13 undefined on input line 23
-6.
-
-
-LaTeX Warning: Citation `sped-thesis' on page 13 undefined on input line 236.
-
-[13 <./fig/other/ewald-sphere.png>] [14 <./fig/other/SPED-apparatus.png> <./fig
-/other/dyndiff1.png> <./fig/other/dyndiff2.png>]
-<fig/other/rebin1.png, id=341, 273.9033pt x 257.2812pt>
+ [14 <./fig/other/ewald-sphere.png>] [15 <./fig/other/SPED-apparatus.png> <./fi
+g/other/dyndiff1.png> <./fig/other/dyndiff2.png>]
+<fig/other/rebin1.png, id=393, 273.9033pt x 257.2812pt>
 File: fig/other/rebin1.png Graphic file (type png)
 
 <use fig/other/rebin1.png>
-Package pdftex.def Info: fig/other/rebin1.png used on input line 256.
+Package pdftex.def Info: fig/other/rebin1.png used on input line 277.
 (pdftex.def)             Requested size: 124.80286pt x 117.22801pt.
 
-<fig/other/rebin3.png, id=342, 274.626pt x 257.2812pt>
+<fig/other/rebin3.png, id=394, 274.626pt x 257.2812pt>
 File: fig/other/rebin3.png Graphic file (type png)
 
 <use fig/other/rebin3.png>
-Package pdftex.def Info: fig/other/rebin3.png used on input line 262.
+Package pdftex.def Info: fig/other/rebin3.png used on input line 283.
 (pdftex.def)             Requested size: 124.80286pt x 116.91788pt.
 
-<fig/other/rebin2.png, id=343, 273.9033pt x 257.2812pt>
+<fig/other/rebin2.png, id=395, 273.9033pt x 257.2812pt>
 File: fig/other/rebin2.png Graphic file (type png)
 
 <use fig/other/rebin2.png>
-Package pdftex.def Info: fig/other/rebin2.png used on input line 268.
+Package pdftex.def Info: fig/other/rebin2.png used on input line 289.
 (pdftex.def)             Requested size: 124.80286pt x 117.22801pt.
- [15]) [16 <./fig/other/rebin1.png> <./fig/other/rebin3.png> <./fig/other/rebin
-2.png>] [17]
+ [16]) [17 <./fig/other/rebin1.png> <./fig/other/rebin3.png> <./fig/other/rebin
+2.png>] [18]
 \openout2 = `method.aux'.
 
  (method.tex
 Chapter 3.
-[18
+[19
 
 
 
-]
-
-LaTeX Warning: Citation `aarholt-rotation' on page 19 undefined on input line 3
-7.
-
-
-LaTeX Warning: Citation `kate-binning' on page 19 undefined on input line 37.
-
-
-LaTeX Warning: Citation `hyperspyUI' on page 19 undefined on input line 37.
-
-[19] <fig/other/UnheatedA-full-spectrum2.png, id=379, 1445.4pt x 1026.234pt>
+] [20]
+<fig/other/UnheatedA-full-spectrum2.png, id=437, 1445.4pt x 1026.234pt>
 File: fig/other/UnheatedA-full-spectrum2.png Graphic file (type png)
 
 <use fig/other/UnheatedA-full-spectrum2.png>
@@ -1060,27 +979,17 @@ ine 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `hyperspy' on page 20 undefined on input line 69.
-
-
-LaTeX Warning: Citation `andreas' on page 20 undefined on input line 69.
-
-[20]
-
-LaTeX Warning: Citation `andreas' on page 21 undefined on input line 71.
-
-[21 <./fig/other/UnheatedA-full-spectrum2.png>]
+[21] [22 <./fig/other/UnheatedA-full-spectrum2.png>]
 
 LaTeX Warning: Reference `fig:spectrum-all-peaks' on page 1 undefined on input 
 line 75.
 
-) [22]
+) [23]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<fig/other/edxinsped/orig5-2.png, id=407, 263.7855pt x 319.79475pt>
+<fig/other/edxinsped/orig5-2.png, id=469, 263.7855pt x 319.79475pt>
 File: fig/other/edxinsped/orig5-2.png Graphic file (type png)
 
 <use fig/other/edxinsped/orig5-2.png>
@@ -1088,14 +997,14 @@ Package pdftex.def Info: fig/other/edxinsped/orig5-2.png used on input line 18.
 
 (pdftex.def)             Requested size: 97.5pt x 118.20021pt.
 
-<fig/other/edxinsped/rot5-2.png, id=408, 260.77425pt x 316.18124pt>
+<fig/other/edxinsped/rot5-2.png, id=470, 260.77425pt x 316.18124pt>
 File: fig/other/edxinsped/rot5-2.png Graphic file (type png)
 
 <use fig/other/edxinsped/rot5-2.png>
 Package pdftex.def Info: fig/other/edxinsped/rot5-2.png used on input line 24.
 (pdftex.def)             Requested size: 97.5pt x 118.21547pt.
 
-<fig/other/edxinsped/show/onlyScale.png, id=409, 578.16pt x 433.62pt>
+<fig/other/edxinsped/show/onlyScale.png, id=471, 578.16pt x 433.62pt>
 File: fig/other/edxinsped/show/onlyScale.png Graphic file (type png)
 
 <use fig/other/edxinsped/show/onlyScale.png>
@@ -1107,11 +1016,11 @@ ine 29.
 LaTeX Warning: Reference ` fig:heated-images-in-overview' on page 1 undefined o
 n input line 75.
 
-[23
+[24
 
 
 
-] <fig/nonheated-img-in-overview.png, id=417, 726.715pt x 717.882pt>
+] <fig/nonheated-img-in-overview.png, id=479, 726.715pt x 717.882pt>
 File: fig/nonheated-img-in-overview.png Graphic file (type png)
 
 <use fig/nonheated-img-in-overview.png>
@@ -1119,7 +1028,7 @@ Package pdftex.def Info: fig/nonheated-img-in-overview.png used on input line 8
 1.
 (pdftex.def)             Requested size: 195.0pt x 192.6258pt.
 
-<fig/nonheated-matching-values.png, id=418, 578.16pt x 433.62pt>
+<fig/nonheated-matching-values.png, id=480, 578.16pt x 433.62pt>
 File: fig/nonheated-matching-values.png Graphic file (type png)
 
 <use fig/nonheated-matching-values.png>
@@ -1127,7 +1036,7 @@ Package pdftex.def Info: fig/nonheated-matching-values.png used on input line 8
 7.
 (pdftex.def)             Requested size: 195.0pt x 146.24449pt.
 
-<"fig/heated-images-in-overview-ink2".png, id=419, 431.211pt x 414.348pt>
+<"fig/heated-images-in-overview-ink2".png, id=481, 431.211pt x 414.348pt>
 File: "fig/heated-images-in-overview-ink2".png Graphic file (type png)
 
 <use "fig/heated-images-in-overview-ink2".png>
@@ -1135,7 +1044,7 @@ Package pdftex.def Info: "fig/heated-images-in-overview-ink2".png used on input
  line 98.
 (pdftex.def)             Requested size: 195.0pt x 187.37163pt.
 
-<"fig/heated-matching-values".png, id=420, 578.16pt x 433.62pt>
+<"fig/heated-matching-values".png, id=482, 578.16pt x 433.62pt>
 File: "fig/heated-matching-values".png Graphic file (type png)
 
 <use "fig/heated-matching-values".png>
@@ -1148,8 +1057,8 @@ Overfull \hbox (4.53845pt too wide) in paragraph at lines 112--113
 re shown in Fig. []4.2(b)[]
  []
 
-[24 <./fig/other/edxinsped/orig5-2.png> <./fig/other/edxinsped/rot5-2.png> <./f
-ig/other/edxinsped/show/onlyScale.png>] [25 <./fig/nonheated-img-in-overview.pn
+[25 <./fig/other/edxinsped/orig5-2.png> <./fig/other/edxinsped/rot5-2.png> <./f
+ig/other/edxinsped/show/onlyScale.png>] [26 <./fig/nonheated-img-in-overview.pn
 g> <./fig/nonheated-matching-values.png> <./fig/heated-images-in-overview-ink2.
 png> <./fig/heated-matching-values.png>]
 
@@ -1164,7 +1073,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 116.
 
-<fig/other/zeta-k-plot-new.png, id=445, 433.62pt x 289.08pt>
+<fig/other/zeta-k-plot-new.png, id=508, 433.62pt x 289.08pt>
 File: fig/other/zeta-k-plot-new.png Graphic file (type png)
 
 <use fig/other/zeta-k-plot-new.png>
@@ -1174,16 +1083,16 @@ Package pdftex.def Info: fig/other/zeta-k-plot-new.png used on input line 179.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26]
+[27]
 \imageheight=\skip62
- <fig/q/1_overview3.png, id=463, 461.725pt x 435.226pt>
+ <fig/q/1_overview3.png, id=525, 461.725pt x 435.226pt>
 File: fig/q/1_overview3.png Graphic file (type png)
 
 <use fig/q/1_overview3.png>
 Package pdftex.def Info: fig/q/1_overview3.png used on input line 198.
 (pdftex.def)             Requested size: 132.59857pt x 124.98372pt.
 
-<fig/q-new/oldzetas_Sa_Ga_Ka.png, id=464, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sa_Ga_Ka.png, id=526, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sa_Ga_Ka.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sa_Ga_Ka.png>
@@ -1191,7 +1100,7 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sa_Ga_Ka.png used on input line 204
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/oldzetas_Sa_As_Ka.png, id=465, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sa_As_Ka.png, id=527, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sa_As_Ka.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sa_As_Ka.png>
@@ -1199,7 +1108,7 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sa_As_Ka.png used on input line 211
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/oldzetas_Sa_Pd_La.png, id=466, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sa_Pd_La.png, id=528, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sa_Pd_La.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sa_Pd_La.png>
@@ -1207,7 +1116,7 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sa_Pd_La.png used on input line 218
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/oldzetas_Sa_Ge_Ka.png, id=467, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sa_Ge_Ka.png, id=529, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sa_Ge_Ka.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sa_Ge_Ka.png>
@@ -1219,14 +1128,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--236
 []$[]$ $[]$
  []
 
-<fig/q/2_overview.png, id=468, 461.725pt x 435.226pt>
+<fig/q/2_overview.png, id=530, 461.725pt x 435.226pt>
 File: fig/q/2_overview.png Graphic file (type png)
 
 <use fig/q/2_overview.png>
 Package pdftex.def Info: fig/q/2_overview.png used on input line 242.
 (pdftex.def)             Requested size: 195.0pt x 183.80974pt.
 
-<fig/q-new/oldzetas_Sb_Pd_La.png, id=469, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sb_Pd_La.png, id=531, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sb_Pd_La.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sb_Pd_La.png>
@@ -1234,7 +1143,7 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sb_Pd_La.png used on input line 249
 .
 (pdftex.def)             Requested size: 195.0pt x 146.24449pt.
 
-<fig/q-new/oldzetas_Sb_Ge_La.png, id=470, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sb_Ge_La.png, id=532, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sb_Ge_La.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sb_Ge_La.png>
@@ -1242,7 +1151,7 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sb_Ge_La.png used on input line 256
 .
 (pdftex.def)             Requested size: 195.0pt x 146.24449pt.
 
-<fig/q-new/oldzetas_Sb_Au_Ma.png, id=471, 578.16pt x 433.62pt>
+<fig/q-new/oldzetas_Sb_Au_Ma.png, id=533, 578.16pt x 433.62pt>
 File: fig/q-new/oldzetas_Sb_Au_Ma.png Graphic file (type png)
 
 <use fig/q-new/oldzetas_Sb_Au_Ma.png>
@@ -1250,7 +1159,13 @@ Package pdftex.def Info: fig/q-new/oldzetas_Sb_Au_Ma.png used on input line 263
 .
 (pdftex.def)             Requested size: 195.0pt x 146.24449pt.
 
-<fig/q-new/D/oldzeta/As_zeta.png, id=472, 578.16pt x 433.62pt>
+<fig/q/D-E/D.png, id=534, 722.7pt x 538.01pt>
+File: fig/q/D-E/D.png Graphic file (type png)
+ <use fig/q/D-E/D.png>
+Package pdftex.def Info: fig/q/D-E/D.png used on input line 281.
+(pdftex.def)             Requested size: 195.0pt x 145.16612pt.
+
+<fig/q-new/D/oldzeta/As_zeta.png, id=535, 578.16pt x 433.62pt>
 File: fig/q-new/D/oldzeta/As_zeta.png Graphic file (type png)
 
 <use fig/q-new/D/oldzeta/As_zeta.png>
@@ -1258,7 +1173,7 @@ Package pdftex.def Info: fig/q-new/D/oldzeta/As_zeta.png used on input line 287
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/D/oldzeta/Ga_zeta.png, id=473, 578.16pt x 433.62pt>
+<fig/q-new/D/oldzeta/Ga_zeta.png, id=536, 578.16pt x 433.62pt>
 File: fig/q-new/D/oldzeta/Ga_zeta.png Graphic file (type png)
 
 <use fig/q-new/D/oldzeta/Ga_zeta.png>
@@ -1266,7 +1181,7 @@ Package pdftex.def Info: fig/q-new/D/oldzeta/Ga_zeta.png used on input line 293
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/D/oldzeta/Ge_zeta.png, id=474, 578.16pt x 433.62pt>
+<fig/q-new/D/oldzeta/Ge_zeta.png, id=537, 578.16pt x 433.62pt>
 File: fig/q-new/D/oldzeta/Ge_zeta.png Graphic file (type png)
 
 <use fig/q-new/D/oldzeta/Ge_zeta.png>
@@ -1274,7 +1189,7 @@ Package pdftex.def Info: fig/q-new/D/oldzeta/Ge_zeta.png used on input line 299
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/D/oldzeta/Pd_zeta.png, id=475, 578.16pt x 433.62pt>
+<fig/q-new/D/oldzeta/Pd_zeta.png, id=538, 578.16pt x 433.62pt>
 File: fig/q-new/D/oldzeta/Pd_zeta.png Graphic file (type png)
 
 <use fig/q-new/D/oldzeta/Pd_zeta.png>
@@ -1282,15 +1197,7 @@ Package pdftex.def Info: fig/q-new/D/oldzeta/Pd_zeta.png used on input line 305
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/D/oldzeta-Au/Pd_zeta.png, id=476, 578.16pt x 433.62pt>
-File: fig/q-new/D/oldzeta-Au/Pd_zeta.png Graphic file (type png)
-
-<use fig/q-new/D/oldzeta-Au/Pd_zeta.png>
-Package pdftex.def Info: fig/q-new/D/oldzeta-Au/Pd_zeta.png used on input line 
-311.
-(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
-
-<fig/q-new/D/oldzeta-Au/Au_zeta.png, id=477, 578.16pt x 433.62pt>
+<fig/q-new/D/oldzeta-Au/Au_zeta.png, id=539, 578.16pt x 433.62pt>
 File: fig/q-new/D/oldzeta-Au/Au_zeta.png Graphic file (type png)
 
 <use fig/q-new/D/oldzeta-Au/Au_zeta.png>
@@ -1298,7 +1205,13 @@ Package pdftex.def Info: fig/q-new/D/oldzeta-Au/Au_zeta.png used on input line
 316.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/E/oldzeta/As_zeta.png, id=478, 578.16pt x 433.62pt>
+<fig/q/D-E/E.png, id=540, 722.7pt x 538.01pt>
+File: fig/q/D-E/E.png Graphic file (type png)
+ <use fig/q/D-E/E.png>
+Package pdftex.def Info: fig/q/D-E/E.png used on input line 327.
+(pdftex.def)             Requested size: 195.0pt x 145.16612pt.
+
+<fig/q-new/E/oldzeta/As_zeta.png, id=541, 578.16pt x 433.62pt>
 File: fig/q-new/E/oldzeta/As_zeta.png Graphic file (type png)
 
 <use fig/q-new/E/oldzeta/As_zeta.png>
@@ -1306,7 +1219,7 @@ Package pdftex.def Info: fig/q-new/E/oldzeta/As_zeta.png used on input line 333
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/E/oldzeta/Ga_zeta.png, id=479, 578.16pt x 433.62pt>
+<fig/q-new/E/oldzeta/Ga_zeta.png, id=542, 578.16pt x 433.62pt>
 File: fig/q-new/E/oldzeta/Ga_zeta.png Graphic file (type png)
 
 <use fig/q-new/E/oldzeta/Ga_zeta.png>
@@ -1314,7 +1227,7 @@ Package pdftex.def Info: fig/q-new/E/oldzeta/Ga_zeta.png used on input line 339
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/E/oldzeta/Ge_zeta.png, id=480, 578.16pt x 433.62pt>
+<fig/q-new/E/oldzeta/Ge_zeta.png, id=543, 578.16pt x 433.62pt>
 File: fig/q-new/E/oldzeta/Ge_zeta.png Graphic file (type png)
 
 <use fig/q-new/E/oldzeta/Ge_zeta.png>
@@ -1322,7 +1235,7 @@ Package pdftex.def Info: fig/q-new/E/oldzeta/Ge_zeta.png used on input line 345
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/E/oldzeta/Pd_zeta.png, id=481, 578.16pt x 433.62pt>
+<fig/q-new/E/oldzeta/Pd_zeta.png, id=544, 578.16pt x 433.62pt>
 File: fig/q-new/E/oldzeta/Pd_zeta.png Graphic file (type png)
 
 <use fig/q-new/E/oldzeta/Pd_zeta.png>
@@ -1330,95 +1243,67 @@ Package pdftex.def Info: fig/q-new/E/oldzeta/Pd_zeta.png used on input line 350
 .
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<fig/q-new/E/oldzeta-Au/Pd_zeta.png, id=482, 578.16pt x 433.62pt>
-File: fig/q-new/E/oldzeta-Au/Pd_zeta.png Graphic file (type png)
-
-<use fig/q-new/E/oldzeta-Au/Pd_zeta.png>
-Package pdftex.def Info: fig/q-new/E/oldzeta-Au/Pd_zeta.png used on input line 
-356.
-(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
-
-<fig/q-new/E/oldzeta-Au/Au_zeta.png, id=483, 578.16pt x 433.62pt>
+<fig/q-new/E/oldzeta-Au/Au_zeta.png, id=545, 578.16pt x 433.62pt>
 File: fig/q-new/E/oldzeta-Au/Au_zeta.png Graphic file (type png)
 
 <use fig/q-new/E/oldzeta-Au/Au_zeta.png>
 Package pdftex.def Info: fig/q-new/E/oldzeta-Au/Au_zeta.png used on input line 
 361.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
+ [28 <./fig/other/zeta-k-plot-new.png>] [29 <./fig/q/1_overview3.png> <./fig/q-
+new/oldzetas_Sa_Ga_Ka.png> <./fig/q-new/oldzetas_Sa_As_Ka.png> <./fig/q-new/old
+zetas_Sa_Pd_La.png> <./fig/q-new/oldzetas_Sa_Ge_Ka.png>] [30 <./fig/q/2_overvie
+w.png> <./fig/q-new/oldzetas_Sb_Pd_La.png> <./fig/q-new/oldzetas_Sb_Ge_La.png> 
+<./fig/q-new/oldzetas_Sb_Au_Ma.png>]
+[31 <./fig/q/D-E/D.png> <./fig/q-new/D/oldzeta/As_zeta.png> <./fig/q-new/D/oldz
+eta/Ga_zeta.png> <./fig/q-new/D/oldzeta/Ge_zeta.png> <./fig/q-new/D/oldzeta/Pd_
+zeta.png> <./fig/q-new/D/oldzeta-Au/Au_zeta.png>] [32 <./fig/q/D-E/E.png> <./fi
+g/q-new/E/oldzeta/As_zeta.png> <./fig/q-new/E/oldzeta/Ga_zeta.png> <./fig/q-new
+/E/oldzeta/Ge_zeta.png> <./fig/q-new/E/oldzeta/Pd_zeta.png> <./fig/q-new/E/oldz
+eta-Au/Au_zeta.png>]
 
-
-LaTeX Warning: Reference `fig:E-overview' on page 1 undefined on input line 369
+LaTeX Warning: Reference `sec:appendix?' on page 33 undefined on input line 371
 .
 
-
-LaTeX Warning: Reference `fig:D-overview' on page 1 undefined on input line 369
-.
-
-[27 <./fig/other/zeta-k-plot-new.png>] [28 <./fig/q/1_overview3.png> <./fig/q-n
-ew/oldzetas_Sa_Ga_Ka.png> <./fig/q-new/oldzetas_Sa_As_Ka.png> <./fig/q-new/oldz
-etas_Sa_Pd_La.png> <./fig/q-new/oldzetas_Sa_Ge_Ka.png>] [29 <./fig/q/2_overview
-.png> <./fig/q-new/oldzetas_Sb_Pd_La.png> <./fig/q-new/oldzetas_Sb_Ge_La.png> <
-./fig/q-new/oldzetas_Sb_Au_Ma.png>] [30 <./fig/q-new/D/oldzeta/As_zeta.png> <./
-fig/q-new/D/oldzeta/Ga_zeta.png> <./fig/q-new/D/oldzeta/Ge_zeta.png> <./fig/q-n
-ew/D/oldzeta/Pd_zeta.png> <./fig/q-new/D/oldzeta-Au/Pd_zeta.png> <./fig/q-new/D
-/oldzeta-Au/Au_zeta.png>] [31 <./fig/q-new/E/oldzeta/As_zeta.png> <./fig/q-new/
-E/oldzeta/Ga_zeta.png> <./fig/q-new/E/oldzeta/Ge_zeta.png> <./fig/q-new/E/oldze
-ta/Pd_zeta.png> <./fig/q-new/E/oldzeta-Au/Pd_zeta.png> <./fig/q-new/E/oldzeta-A
-u/Au_zeta.png>]
-
-LaTeX Warning: Reference `fig:E-overview' on page 1 undefined on input line 371
-.
-
-
-LaTeX Warning: Reference `fig:D-overview' on page 1 undefined on input line 371
-.
-
-
-LaTeX Warning: Reference `sec:appendix?' on page 32 undefined on input line 371
-.
-
-
-LaTeX Warning: Reference `BCF1' on page 1 undefined on input line 409.
-
-[32] <fig/q/B-C-F/BCF.png, id=554, 275.429pt x 202.356pt>
+[33] <fig/q/B-C-F/BCF.png, id=619, 275.429pt x 202.356pt>
 File: fig/q/B-C-F/BCF.png Graphic file (type png)
 
 <use fig/q/B-C-F/BCF.png>
-Package pdftex.def Info: fig/q/B-C-F/BCF.png used on input line 414.
+Package pdftex.def Info: fig/q/B-C-F/BCF.png used on input line 446.
 (pdftex.def)             Requested size: 272.99881pt x 200.58624pt.
 
-<fig/q/B-C-F/AsGaGePd-GeKline-std.png, id=555, 433.62pt x 289.08pt>
+<fig/q/B-C-F/AsGaGePd-GeKline-std.png, id=620, 433.62pt x 289.08pt>
 File: fig/q/B-C-F/AsGaGePd-GeKline-std.png Graphic file (type png)
 
 <use fig/q/B-C-F/AsGaGePd-GeKline-std.png>
 Package pdftex.def Info: fig/q/B-C-F/AsGaGePd-GeKline-std.png used on input lin
-e 420.
+e 452.
 (pdftex.def)             Requested size: 272.99881pt x 182.00667pt.
 
-<fig/q/B-C-F/AuGePd-std.png, id=556, 433.62pt x 289.08pt>
+<fig/q/B-C-F/AuGePd-std.png, id=621, 433.62pt x 289.08pt>
 File: fig/q/B-C-F/AuGePd-std.png Graphic file (type png)
 
 <use fig/q/B-C-F/AuGePd-std.png>
-Package pdftex.def Info: fig/q/B-C-F/AuGePd-std.png used on input line 426.
+Package pdftex.def Info: fig/q/B-C-F/AuGePd-std.png used on input line 458.
 (pdftex.def)             Requested size: 272.99881pt x 182.00667pt.
 
 
-LaTeX Warning: Float too large for page by 86.39954pt on input line 433.
+LaTeX Warning: Float too large for page by 86.39954pt on input line 465.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [33] [34 <./fig/q/B-C-F/BCF.png> <./fig/q/B-C-F/AsGaGePd-GeKline-std.png> <./
+) [34] [35 <./fig/q/B-C-F/BCF.png> <./fig/q/B-C-F/AsGaGePd-GeKline-std.png> <./
 fig/q/B-C-F/AuGePd-std.png>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
 Chapter 5.
-[35
+[36
 
 
 
-] [36] [37]
+] [37] [38]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 47.
@@ -1431,18 +1316,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 47.
 
-[38] [39] [40]
-
-LaTeX Warning: Citation `nanowire-theory' on page 41 undefined on input line 79
-.
-
+[39] [40] [41]
 
 LaTeX Warning: Reference `fig:...' on page 1 undefined on input line 79.
 
 
 LaTeX Warning: Reference `fig:DE' on page 1 undefined on input line 79.
 
-[41] [42]) [43]
+) [42] [43]
 \openout2 = `acronyms.aux'.
 
  (acronyms.tex
@@ -1460,185 +1341,107 @@ Appendix B.
 
 
 
-] (thesis.bbl
-Overfull \hbox (88.38823pt too wide) in paragraph at lines 4--9
-[]\T1/cmr/m/n/12 Thomas Aarholt.  ro-tate.  $\OMS/cmsy/m/n/12 n$\T1/cmr/m/n/12 
-url{https://github.com/thomasaarholt/hyperspy/tree/rotate},
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-[]\T1/cmr/m/n/12 Vidar Tonaas Fauske.  Hy-per-SpyUI 0.6.1.
- []
-
-[46
-
-
 ]
-Overfull \hbox (223.7469pt too wide) in paragraph at lines 64--69
-[]\T1/cmr/m/n/12 Kate MacArthur.  lin-ear_binning.  $\OMS/cmsy/m/n/12 n$\T1/cmr
-/m/n/12 url{https://github.com/k8macarthur/hyperspy/tree/Non$\OMS/cmsy/m/n/12 n
-$\T1/cmr/m/n/12 _Integer$\OMS/cmsy/m/n/12 n$\T1/cmr/m/n/12 _Binning},
- []
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 91.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.91 ...ilde{\}}1{\{}$\backslash$times{\}}10${\^{}
-                                                  }{\{}-6{\}}$
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.91 ...ilde{\}}1{\{}$\backslash$times{\}}10${\^{}
-                                                  }{\{}-6{\}}$
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.91 ...ilde{\}}1{\{}$\backslash$times{\}}10${\^{}
-                                                  }{\{}-6{\}}$
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.91 ...}$\backslash$times{\}}10${\^{}}{\{}-6{\}}$
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no è in font cmex10!
-
-LaTeX Warning: Command \^ invalid in math mode on input line 92.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.92   {\{}$\Omega${\}} cm${\^{}
-                                }{\{}2{\}}$) to n-GaAs}.
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.92   {\{}$\Omega${\}} cm${\^{}
-                                }{\{}2{\}}$) to n-GaAs}.
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.92   {\{}$\Omega${\}} cm${\^{}
-                                }{\{}2{\}}$) to n-GaAs}.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.92   {\{}$\Omega${\}} cm${\^{}}{\{}2{\}}$
-                                           ) to n-GaAs}.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no è in font cmex10!
-
-Underfull \hbox (badness 4391) in paragraph at lines 88--94
-[]\T1/cmr/m/n/12 L.C. Wang, P.H. Hao, and B.J. Wu.  Low-temperature-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--94
-\T1/cmr/m/n/12 processed (150-175 {$\OMS/cmsy/m/n/12 n$\T1/cmr/m/n/12 deg}C) Ge
-/Pd-based Ohmic con-tacts
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 88--94
-\T1/cmr/m/n/12 ({$\OML/cmm/m/it/12 $\T1/cmr/m/n/12 }$[][]\OML/cmm/m/it/12 c[]$
-\T1/cmr/m/n/12 {$\OMS/cmsy/m/n/12 n$\T1/cmr/m/n/12 tilde}1{$\OMS/cmsy/m/n/12 n$
-\T1/cmr/m/n/12 times}10$[]$ {$\OT1/cmr/m/n/12 
-$\T1/cmr/m/n/12 } cm$[]$) to n-GaAs.  \T1/cmr/m/it/12 Ap-
- []
-
-)
+No file thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
- [47]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
- (thesis.aux (front.aux) (preface.aux) (acknowledgment.aux) (summary.aux) (intr
-o.aux) (theory.aux) (method.aux) (results.aux) (discussion.aux)
+(thesis.aux (front.aux) (preface.aux) (acknowledgment.aux) (summary.aux)
+(intro.aux) (theory.aux) (method.aux) (results.aux) (discussion.aux)
 (acronyms.aux) (appendix-b.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 91BC7F45B0F70B2C491401328E6334BD;2617.
+(rerunfilecheck)             Checksum: C6D8EB60088EC2B12104A7D34498DCAA;2669.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
  19561 strings out of 493333
- 380536 string characters out of 3139185
- 417038 words of memory out of 3000000
+ 380525 string characters out of 3139185
+ 416038 words of memory out of 3000000
  22645 multiletter control sequences out of 15000+200000
- 23972 words of font info for 69 fonts, out of 3000000 for 9000
+ 23206 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,41p,10394b,818s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\tcrm1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecti1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Johannes\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Johannes\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\J
-ohannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
-> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecbx1728.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Johannes\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\Johannes\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2488.pk><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on thesis.pdf (52 pages, 9925512 bytes).
+ 42i,10n,44p,10394b,768s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{cite.nanowire-theory} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.andreas} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hyperspyUI} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.kate-binning} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.aarholt-rotation} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.sped-thesis} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.logratio-article} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.eels-bok} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.zeta-method} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.cliff-lorimer} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.x-ray-booklet} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.williams-carter} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hyperspy} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Baca} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Lieber} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.nanowire-paper} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.WeiLu} has been referenced but does not exist,
+ replaced by a fixed one
+
+ <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\tcrm1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecti1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Johannes\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Johannes\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Joh
+annes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> 
+<C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecbx1728.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
+en\ec\dpi600\ecrm1200.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Johannes\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <C:\Users\Johannes\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2488.pk><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on thesis.pdf (50 pages, 8652674 bytes).
 PDF statistics:
- 1134 PDF objects out of 1200 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 518 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1144 PDF objects out of 1200 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 

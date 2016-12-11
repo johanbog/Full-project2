@@ -1,20 +1,43 @@
 \chapter{Theory}
 
 \section{Semiconductor nanowires}
+The basic semiconductor nanowire is a one-dimensional, uniform structure with a diameter typically in the range 3-500 nm \cite{http://cml.harvard.edu/assets/MRSBull36-1052_Lieber.pdf}. Semiconductor nanowires are generally synthesized via the vapor-liquid-solid (VLS) process as illustrated in \cref{fig:nanowire-growth}. In this process, a nanoparticles acting as a catalyst is heated above the eutectic point, creating a eutectic alloy. This takes place in the presence of the semiconductor-material in vapor-phase, which proceeds to be incorporated into the the alloy through the vapor/liquid-interface. The alloy will eventually supersaturate, after which further addition of the vapor causes the solid phase of the eutectic alloy to grow, creating a nanowire \cite{Lieber, WeiLu}. 
 
-\section{Electron Microscopy}
-In an electron microscope, a beam of electrons are transmitted onto a material. Compared to a microscope using visible light, an EM gives a much higher resolution due to the wavelength of electrons being much smaller than that of visible light. Because of this, an EM can be used to study the atomic structure of materials.
-	
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig/nanowire-growth}
+	\caption{From \cite{WeiLu}}
+	\label{fig:nanowire-growth}
+\end{figure}
+
+When the nanowire is connected to a metal electrode, a Schottky barrier is usually formed in the interface. This barrier can hinder the flow of charge through the interface, which for many device applications is a necessity \cite{nanowire-paper}. One way of overcoming this hindrance is by heavily doping the nanowire near the contact, enabling electrons to tunnel through the interface. The contact is often subsequently annealed to further improve the resistivity \cite{Lieber}.
+
+\section{Transmission Electron Microscopy}
+In a transmission electron microscope (TEM), a beam of electrons are transmitted onto a material. Compared to a microscope using visible light, an electron gives a much higher resolution due to the wavelength of electrons being much smaller than that of visible light. Because of this, a TEM can be used to study the atomic structure of materials.
+There are many different kinds of TEMs, of which only the scanning TEM (STEM), will be expanded upon here. Before discussing the STEM, however, the basics behind the TEM will now be presented. In a conventional TEM, a broad, parallel beam of electrons is transmitted through a sample. In order for a sufficient amount of electrons to be transmitted, the sample is required to be thin (a thickness of <$\SI{100}{\nano\meter}$ is common). A TEM typically operates with electron energies of 200 keV or $\SI{300}{\kilo\electronvolt}$, giving the electrons a velocity $v > c/2$ which requires relativistic effects to be taken into account. Another factor that should be considered is the possibility of the electron beam damaging the material. This can happen as the chemical bonds in the material are broken (radiolysis), atoms are displaced or ejected from the crystal lattice (knock-on damage or sputtering, respectively) or as the material is changed due to heating \cite{williams-carter}.
+
 	\subsection{Electron emission}
+A TEM can use one of two types of electron sources: A thermionic source or a field-emission source. The former produces electrons as it is heated while the latter requires an electrical potential to be applied between it an an anode. Either source will be part of a device called an electron gun, which is used to "shoot" an electron beam. The field-emission source, usually called a FEG (Field Emission Gun), has a very thin, needle-like tip, as illustrated in \cref{fig:FEG}, from which the electrons are emitted. The principle behind the emission of electrons is that the applied potential $V$ will create a very strong electric field
+\begin{equation*}
+E=\frac{V}{r}
+\end{equation*}
+on the tip, due to the small tip radius. If this electric field is high enough, electrons can tunnel out of the FEG and an electron beam is created \cite{williams-carter}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig/FEG}
+	\caption{FEG}
+	\label{fig:FEG}
+\end{figure}
+
+
 
 	\subsection{Electron-sample interaction}
 When the electron beam hits the sample, several different signals are generated. This report will only discuss two of them: Characteristic X-rays (due to inelastically scattered electrons, and elastically scattered electrons. Characteristic X-rays are produced as the incoming electrons interact with inner-core electrons in the sample, and can be used to determine which elements the sample consists of. The theory behind characteristic X-rays, and why they are useful, will be expanded upon in section \ref{EDS}. Electrons being transmitted through the sample that are elastically scattered (that is, the energy of the incoming electrons is conserved) gives rise to a diffraction pattern, which can be used to determine the crystallographic properties of the sample. Electron diffraction will be properly introduced in \cref{ED} \cite{williams-carter}.
 
-	\subsection{Transmission Electron Microscopy (TEM)}
-There are many different kinds of transmission electron microscopes (TEMs), of which only the scanning TEM (STEM), introduced in section \ref{STEM}, will be expanded upon here. Before discussing the STEM, however, the basics behind the TEM will now be presented. In a conventional TEM, a broad, parallel beam of electrons is transmitted through a sample. In order for a sufficient amount of electrons to be transmitted, the sample is required to be thin (a thickness of <$\SI{100}{\nano\meter}$ is common). A TEM typically operates with electron energies of $\SI{200}{\kilo\electronvolt}$ or $\SI{300}{\kilo\electronvolt}$, giving the electrons a velocity $v > c/2$ which requires relativistic effects to be taken into account. Another factor that should be considered is the possibility of the electron beam damaging the material. This can happen as the chemical bonds in the material are broken (radiolysis), atoms are displaced or ejected from the crystal lattice (knock-on damage or sputtering, respectively) or as the material is changed due to heating \cite{williams-carter}.
 
-	\subsection{Scanning Transmission Electron Microscopy (STEM)}
-A scanning transmission electron microscope (STEM) uses an electron beam focused onto a small spot on the sample. The sample is then scanned in a raster pattern and the signal is recorded for each point. This technique can be used to investigate very small areas of the sample and accurately study transitions in atomic structure and/or composition.
+	\subsection{Scanning Transmission Electron Microscopy}
+A scanning transmission electron microscope (STEM) uses an electron beam focused onto a small spot on the sample. The sample is then scanned in a raster pattern and the signal is recorded for each point. This technique can be used to investigate very small areas of the sample and accurately study transitions in atomic structure and/or composition \cite{williams-carter}. 
 
 \section{X-ray spectroscopy}\label{EDS}
 The characteristic X-rays resulting from inelastic scattering of the electrons being transmitted through the sample can be used for both qualitative and quantitative analysis. Qualitative analysis can determine which elements are in the sample, while quantitative analysis can indicate the composition of the different elements. When X-ray spectroscopy is performed in a STEM, the electron probe is scanned over the material and focused on each pixel for a certain amount of time. During this time period, the X-rays being emitted from the sample are detected and the signal for the pixel is saved before the probe moves to the next pixel. 
@@ -107,7 +130,7 @@ The thickness of a sample can be estimated by using electron energy-loss spectro
 
 \begin{equation}
 \label{eq:logratio}
-\nicefrac{t}{\lambda}=\ln (\nicefrac{I_t}{I_0}),
+\dfrac{t}{\lambda}=\ln (\dfrac{I_t}{I_0}),
 \end{equation}
 
 where $I_0$ and $I_t$ are the areas under the zero-loss peak and under the whole spectrum, respectively. If the mean free path $\lambda$ is known, the thickness $t$ can be estimated \cite{eels-bok,logratio-article}.
